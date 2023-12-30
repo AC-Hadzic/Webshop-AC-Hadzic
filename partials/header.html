@@ -7,18 +7,25 @@
 
         <style>
             body {
-                font-size: large;
                 margin: 0;
+            }
+
+            .background_header {
+                height: 500px;
+                display: flex;
+                align-items: flex-end;
+                background-color: lightcoral;
             }
 
             .main {
                 display: flex;
-                height: 200px;
+                height: 160px;
+                width: 100%;
             }
 
             .logo {
-                min-width: 200px;
-                height: 200px;
+                min-width: 160px;
+                height: 160px;
                 background-color: green;
             }
 
@@ -30,7 +37,7 @@
 
             .prvi_red {
                 background-color: yellow;
-                height: 100px;
+                height: 80px;
                 width: 100%;
 
                 display: flex;
@@ -41,7 +48,7 @@
 
             .prvi_red > div {
                 background-color: lightblue;
-                height: 50px;
+                height: 40px;
 
                 display: flex;
                 align-items: center;
@@ -54,7 +61,7 @@
 
             .drugi_red {
                 background-color: red;
-                height: 100px;
+                height: 80px;
                 width: 100%;
 
                 display: flex;
@@ -65,7 +72,7 @@
 
             .drugi_red > div {
                 background-color: lightblue;
-                height: 50px;
+                height: 40px;
 
                 display: flex;
                 align-items: center;
@@ -75,69 +82,86 @@
     
     <body>
         <object>
-            <div class="main">
-                <div class="logo">
-                </div>
-
-                <div class="menus">
-                    <div class="prvi_red">
-                        <div class="email">
-                            <p>
-                                <strong>E-mail:</strong> teleprodaja@gmail.com
-                            </p>
-                        </div>
-
-                        <div class="tel">
-                            <p>
-                                <strong>Telefon:</strong> 022 123 321
-                            </p>
-                        </div>
-
-                        <div class="social_media">
-                            <div>
-                                <a id="fb" href="https://www.facebook.com/TeleRecenzija/" target="_blank"><img class="icon" src="../images/other/facebook.svg" alt="Link to Facebook">Facebook </a>
-                            </div>
-
-                            <div>
-                                <a id="in" href="https://www.instagram.com/telerecenzija/" target="_blank"><img class="icon" src="../images/other/instagram.svg" alt="Link to Instagram">Instagram </a>
-                            </div>
-
-                            <div>
-                                <a id="wp" href="https://www.whatsapp.com/telerecenzija/" target="_blank"><img class="icon" src="../images/other/whatsapp.svg" alt="Link to Whatsapp">Whatsapp</a>
-                            </div>
-
-                            <div>
-                                <a id="tw" href="https://www.twitter.com/telerecenzija/" target="_blank"><img class="icon" src="../images/other/twitter.svg" alt="Link to Twitter">Twitter </a>
-                            </div>
-                        </div>
-
-                        <div class="search">     
-                            <input type="search" name="search_bar" id="search_bar" placeholder="Tražilica">                
-
-                        </div>
-
-                        <div class="basket">
-                            <p>
-                                Košarica
-                            </p>
-                        </div>
+            <div class="background_header">
+                <div class="main">
+                    <div class="logo">
                     </div>
 
-                    <div class="drugi_red">
-                        <div class="home">
-                            <a href="../index.html"> Naslovnica </a>
+                    <div class="menus">
+                        <div class="prvi_red">
+                            <div class="email">
+                                <p>
+                                    <strong>E-mail:</strong> teleprodaja@gmail.com
+                                </p>
+                            </div>
+
+                            <div class="tel">
+                                <p>
+                                    <strong>Tel:</strong> 022 123 321
+                                </p>
+                            </div>
+
+                            <div class="social_media">
+                                <p>
+                                    Društvene mreže:   
+                                </p>
+                                
+                                <div>
+                                    <a id="fb" href="https://www.facebook.com/TeleRecenzija/" target="_blank"><img class="icon" src="../images/other/facebook.svg" alt="Link to Facebook"></a>
+                                </div>
+
+                                <div>
+                                    <a id="in" href="https://www.instagram.com/telerecenzija/" target="_blank"><img class="icon" src="../images/other/instagram.svg" alt="Link to Instagram"></a>
+                                </div>
+
+                                <div>
+                                    <a id="wp" href="https://www.whatsapp.com/telerecenzija/" target="_blank"><img class="icon" src="../images/other/whatsapp.svg" alt="Link to Whatsapp"></a>
+                                </div>
+
+                                <div>
+                                    <a id="tw" href="https://www.twitter.com/telerecenzija/" target="_blank"><img class="icon" src="../images/other/twitter.svg" alt="Link to Twitter"></a>
+                                </div>
+                            </div>
+
+                            <div class="search">     
+                                <input type="search" name="search_bar" id="search_bar" placeholder="Tražilica">                
+
+                            </div>
+
+                            <div class="basket">
+                                <p>
+                                    Košarica
+                                </p>
+                            </div>
+
+                            <div class="login">
+                                <p>
+                                    Prijavi se
+                                </p>
+                            </div>
                         </div>
 
-                        <div class="products">
-                            <a href="../products.html"> Proizvodi </a>
-                        </div>
+                        <div class="drugi_red">
+                            <div class="home">
+                                <a href="../index.html"> Naslovnica </a>
+                            </div>
 
-                        <div class="about">
-                            <a href="../about.html"> O nama </a>
-                        </div>
-                    </div>     
+                            <div class="products">
+                                <a href="../products.html"> Proizvodi </a>
+                            </div>
+
+                            <div class="about">
+                                <a href="../about.html"> O nama </a>
+                            </div>
+
+                            <div class="contact">
+                                <a href="../contact.html"> Kontaktirajte nas </a>
+                            </div>
+                        </div>     
+                    </div>
                 </div>
             </div>
+
         </object>
     </body>
 </html>
