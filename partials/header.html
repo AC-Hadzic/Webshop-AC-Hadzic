@@ -4,20 +4,139 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
-        <link rel="stylesheet" href="header.css" as="style">
 
         <style>
-            div {
+            body {
+                font-size: large;
+                margin: 0;
+            }
+
+            .main {
+                display: flex;
+                height: 200px;
+            }
+
+            .logo {
+                min-width: 200px;
+                height: 200px;
+                background-color: green;
+            }
+
+            .menus {
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+            }
+
+            .prvi_red {
                 background-color: yellow;
+                height: 100px;
+                width: 100%;
+
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+
+            .prvi_red > div {
+                background-color: lightblue;
                 height: 50px;
+
+                display: flex;
+                align-items: center;
+            }
+
+                .social_media {
+                    display: flex;
+                    justify-content: space-around;
+                }
+
+            .drugi_red {
+                background-color: red;
+                height: 100px;
+                width: 100%;
+
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+
+            .drugi_red > div {
+                background-color: lightblue;
+                height: 50px;
+
+                display: flex;
+                align-items: center;
             }
         </style>
     </head>
     
     <body>
         <object>
-            <div>
-                
+            <div class="main">
+                <div class="logo">
+                </div>
+
+                <div class="menus">
+                    <div class="prvi_red">
+                        <div class="email">
+                            <p>
+                                <strong>E-mail:</strong> teleprodaja@gmail.com
+                            </p>
+                        </div>
+
+                        <div class="tel">
+                            <p>
+                                <strong>Telefon:</strong> 022 123 321
+                            </p>
+                        </div>
+
+                        <div class="social_media">
+                            <div>
+                                <a id="fb" href="https://www.facebook.com/TeleRecenzija/" target="_blank"><img class="icon" src="../images/other/facebook.svg" alt="Link to Facebook">Facebook </a>
+                            </div>
+
+                            <div>
+                                <a id="in" href="https://www.instagram.com/telerecenzija/" target="_blank"><img class="icon" src="../images/other/instagram.svg" alt="Link to Instagram">Instagram </a>
+                            </div>
+
+                            <div>
+                                <a id="wp" href="https://www.whatsapp.com/telerecenzija/" target="_blank"><img class="icon" src="../images/other/whatsapp.svg" alt="Link to Whatsapp">Whatsapp</a>
+                            </div>
+
+                            <div>
+                                <a id="tw" href="https://www.twitter.com/telerecenzija/" target="_blank"><img class="icon" src="../images/other/twitter.svg" alt="Link to Twitter">Twitter </a>
+                            </div>
+                        </div>
+
+                        <div class="search">     
+                            <input type="search" name="search_bar" id="search_bar" placeholder="Tražilica">                
+
+                        </div>
+
+                        <div class="basket">
+                            <p>
+                                Košarica
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="drugi_red">
+                        <div class="home">
+                            <a href="../index.html"> Naslovnica </a>
+                        </div>
+
+                        <div class="products">
+                            <a href="../products.html"> Proizvodi </a>
+                        </div>
+
+                        <div class="about">
+                            <a href="../about.html"> O nama </a>
+                        </div>
+                    </div>     
+                </div>
             </div>
         </object>
     </body>
