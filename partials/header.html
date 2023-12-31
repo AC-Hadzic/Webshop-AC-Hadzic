@@ -48,7 +48,7 @@
 
             .prvi_red > div {
                 background-color: lightblue;
-                height: 40px;
+                height: 30px;
 
                 display: flex;
                 align-items: center;
@@ -72,10 +72,46 @@
 
             .drugi_red > div {
                 background-color: lightblue;
-                height: 40px;
+                height: 30px;
 
                 display: flex;
                 align-items: center;
+            }
+
+            @media screen and (min-width: 721px) {
+                background_header, .logo, .main, .prvi_red, .drugi_red {
+                    transition: all ease 300ms;
+                }
+            }
+            @media screen and (max-width: 720px) {
+                .background_header, .logo, .main, .prvi_red, .drugi_red {
+                    transition: all ease 300ms;
+                }
+
+                .background_header {
+                    height: 180px;
+                }
+
+                .logo {
+                    min-width: 65px;
+                    height: 70px;
+                }
+
+                .main {
+                    height: 70px;
+                }
+
+                .prvi_red {
+                    height: 35px;
+                }
+
+                     .prvi_red :is(.email, .tel, .social_media p) {
+                        display: none;
+                    }
+
+                .drugi_red {
+                    height: 35px;
+                }
             }
         </style>
     </head>

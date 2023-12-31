@@ -15,6 +15,10 @@
                 justify-content: space-evenly;
             }
 
+            .prvi_dio {
+                display: flex;
+            }
+
             .legals {
                 display: flex;
                 flex-wrap: wrap;
@@ -25,70 +29,117 @@
                 width: 50%;
                 background-color: lightblue;
             }
+
+            .iframe_map {
+                width: 400px;
+                height: 400px;
+            }
+
+            @media screen and (max-width: 720px) {
+                .main, .iframe_map, .legals {
+                    transition: all ease 300ms;
+                }
+
+                .main {
+                    flex-wrap: wrap;
+                }
+
+                .legals {
+                    flex-direction: column;
+                }
+
+                .map p {
+                    display: none;
+                }
+
+                .iframe_map {
+                    width: 300px;
+                    height: 300px;
+                } 
+            }
+
+            @media screen and (max-width: 500px) {
+                .iframe_map {
+                    transition: all ease 300ms;
+                }
+
+                .iframe_map {
+                    width: 200px;
+                    height: 200px;
+                }   
+            }
+
+            @media screen and (min-width: 451px) or (min-width: 721px) {
+                .main, .iframe_map, .legals {
+                    transition: all ease 300ms;
+                }
+            }
         </style>
     </head>
     
     <body>
         <object>
             <div class="main">
-                <div class="links">
-                    Sadržaj
-                    <div class="home">
-                        <a href="../index.html"> Naslovnica </a>
-                    </div>
+                <div class="prvi_dio">
+                    <div class="links">
+                        Sadržaj
+                        <div class="home">
+                            <a href="../index.html"> Naslovnica </a>
+                        </div>
 
-                    <div class="products">
-                        <a href="../products.html"> Proizvodi </a>
-                    </div>
+                        <div class="products">
+                            <a href="../products.html"> Proizvodi </a>
+                        </div>
 
-                    <div class="about">
-                        <a href="../about.html"> O nama </a>
+                        <div class="about">
+                            <a href="../about.html"> O nama </a>
+                        </div>
+
+                        <div class="contact">
+                            <a href="../contact.html"> Kontaktirajte nas </a>
+                        </div>     
                     </div>
 
                     <div class="contact">
-                        <a href="../contact.html"> Kontaktirajte nas </a>
-                    </div>     
-                </div>
+                        Kontakti
+                        <p>
+                            <strong>E-mail:</strong> teleprodaja@gmail.com
+                        </p>
+                        <p>
+                            <strong>Tel:</strong> 022 123 321
+                        </p>
 
-                <div class="contact">
-                    Kontakti
-                    <p>
-                        <strong>E-mail:</strong> teleprodaja@gmail.com
-                    </p>
-                    <p>
-                        <strong>Tel:</strong> 022 123 321
-                    </p>
+                        <p>
+                            <strong>Golub pismonoša:</strong> Oliver Golubović
+                        </p>
 
-                    <p>
-                        <strong>Golub pismonoša:</strong> Oliver Golubović
-                    </p>
-
-                    <button>Kontakt forma</button>
-                </div>
-
-                <div class="legals">
-                    <div>
-                        Uvjeti poslovanja
+                        <button>Kontakt forma</button>
                     </div>
 
-                    <div>
-                        Uvjeti korištenja
-                    </div>
+                    <div class="legals">
+                        <div>
+                            Uvjeti poslovanja
+                        </div>
 
-                    <div>
-                        Pravila o privatnosti
-                    </div>
+                        <div>
+                            Uvjeti korištenja
+                        </div>
 
-                    <div>
-                        Pravila o kolačićima
+                        <div>
+                            Pravila o privatnosti
+                        </div>
+
+                        <div>
+                            Pravila o kolačićima
+                        </div>
                     </div>
                 </div>
-
+                
                 <div class="map">
                     <p>
                         Lokacija   
                     </p>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6999.21887334161!2d15.884451571492656!3d43.71473987587183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13352585f34010b7%3A0x5cce4b3085802e0!2sObalna%20baterija%202%20ex%20jna!5e1!3m2!1shr!2shr!4v1703952748510!5m2!1shr!2shr" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe class="iframe_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6999.21887334161!2d15.884451571492656!3d43.71473987587183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13352585f34010b7%3A0x5cce4b3085802e0!2sObalna%20baterija%202%20ex%20jna!5e1!3m2!1shr!2shr!4v1703952748510!5m2!1shr!2shr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </object>
