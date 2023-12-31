@@ -5,10 +5,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
 
+        <script src="../js/javascript.js"></script>
+
         <style>
+            body {
+                margin: 0;
+                font-size: larger;
+                color: white;
+            }
+
             .main {
                 background-color: gray;
                 height: 500px;
+                width: 85vw;
+                margin: 0 auto;
 
                 display: flex;
                 align-items: center;
@@ -35,9 +45,13 @@
                 height: 400px;
             }
 
-            @media screen and (max-width: 720px) {
+            @media screen and (max-width: 1080px) {
                 .main, .iframe_map, .legals {
                     transition: all ease 300ms;
+                }
+
+                body {
+                    font-size: medium;
                 }
 
                 .main {

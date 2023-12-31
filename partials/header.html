@@ -5,13 +5,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
 
+        <script src="../js/javascript.js"></script>
+
         <style>
             body {
                 margin: 0;
+                font-size: larger;
+                color: white;
             }
 
             .background_header {
                 height: 500px;
+                width: 85vw;
+                margin: 0 auto;
                 display: flex;
                 align-items: flex-end;
                 background-color: lightcoral;
@@ -29,6 +35,20 @@
                 background-color: green;
             }
 
+            .logo img {
+                height: 160px;
+                width: 160px;
+                filter: invert(98%) sepia(100%) saturate(0%) hue-rotate(325deg) brightness(101%) contrast(105%);
+            }
+
+            .logo img:hover {
+                filter: invert(8%) sepia(97%) saturate(5633%) hue-rotate(360deg) brightness(83%) contrast(109%);
+            }
+
+            .logo img:active {
+                filter: invert(47%) sepia(99%) saturate(1067%) hue-rotate(10deg) brightness(90%) contrast(101%);
+            }
+
             .menus {
                 display: flex;
                 flex-wrap: wrap;
@@ -42,7 +62,7 @@
 
                 display: flex;
                 flex-wrap: wrap;
-                justify-content: space-evenly;
+                justify-content: left;
                 align-items: center;
             }
 
@@ -52,11 +72,22 @@
 
                 display: flex;
                 align-items: center;
+
+                padding: 5px;
+                margin-right: 15px;
             }
+
+                .email {
+                    margin-left: 15px;
+                }
 
                 .social_media {
                     display: flex;
                     justify-content: space-around;
+                }
+
+                .basket {
+                    margin-left: auto;
                 }
 
             .drugi_red {
@@ -88,6 +119,10 @@
                     transition: all ease 300ms;
                 }
 
+                body {
+                    font-size: medium;
+                }
+
                 .background_header {
                     height: 180px;
                 }
@@ -96,6 +131,11 @@
                     min-width: 65px;
                     height: 70px;
                 }
+
+                .logo img {
+                height: 70px;
+                width: 70px;
+            }
 
                 .main {
                     height: 70px;
@@ -107,6 +147,11 @@
 
                      .prvi_red :is(.email, .tel, .social_media p) {
                         display: none;
+                    }
+
+                    .prvi red > div {
+                        padding: 0px;
+                        padding-inline: 5px;
                     }
 
                 .drugi_red {
@@ -121,6 +166,7 @@
             <div class="background_header">
                 <div class="main">
                     <div class="logo">
+                        <a href="../index.html"><img src="../images/other/logo.png" alt="Logo TeleProdaje"></a>
                     </div>
 
                     <div class="menus">
@@ -178,10 +224,6 @@
                         </div>
 
                         <div class="drugi_red">
-                            <div class="home">
-                                <a href="../index.html"> Naslovnica </a>
-                            </div>
-
                             <div class="products">
                                 <a href="../products.html"> Proizvodi </a>
                             </div>
@@ -191,13 +233,16 @@
                             </div>
 
                             <div class="contact">
-                                <a href="../contact.html"> Kontaktirajte nas </a>
+                                <a href="../contact.html"> Kontakti </a>
+                            </div>
+
+                            <div class="faq">
+                                <a href="../faq.html"> Česta pitanja </a>
                             </div>
                         </div>     
                     </div>
                 </div>
             </div>
-
         </object>
     </body>
 </html>
