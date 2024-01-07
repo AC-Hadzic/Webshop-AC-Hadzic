@@ -75,6 +75,7 @@ box-shadow: inset 0px 0px 20px 10px rgba(0,0,0,1);
             .logo img {
                 height: 160px;
                 width: 160px;
+                margin-inline: 25px;
                 filter: invert(98%) sepia(100%) saturate(0%) hue-rotate(325deg) brightness(101%) contrast(105%);
             }
 
@@ -126,8 +127,17 @@ box-shadow: inset 0px 0px 20px 10px rgba(0,0,0,1);
                     margin-left: auto;
                 }
 
+                .login img {
+                    margin-inline: 25px;
+                }
+
                 .basket, .login {
                     filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(2835%) hue-rotate(288deg) brightness(117%) contrast(100%);
+                }
+
+                :is(.basket, .login) img {
+                    height: 30px;
+                    width: 30px;
                 }
 
             .drugi_red {
@@ -138,6 +148,7 @@ box-shadow: inset 0px 0px 20px 10px rgba(0,0,0,1);
                 flex-wrap: wrap;
                 justify-content: space-evenly;
                 align-items: center;
+                border-top: 1px white solid;
             }
 
             .drugi_red > div {
@@ -147,12 +158,17 @@ box-shadow: inset 0px 0px 20px 10px rgba(0,0,0,1);
                 align-items: center;
             }
 
-            @media screen and (min-width: 721px) {
+            a {
+                color: white;
+                text-decoration: none;
+            }
+
+            @media screen and (min-width: 951px) {
                 background_header, .logo, .main, .prvi_red, .drugi_red {
                     transition: all ease 300ms;
                 }
             }
-            @media screen and (max-width: 720px) {
+            @media screen and (max-width: 950px) {
                 .background_header, .logo, .main, .prvi_red, .drugi_red {
                     transition: all ease 300ms;
                 }
