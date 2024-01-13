@@ -1,0 +1,161 @@
+body {
+    margin: 0;
+    font-size: larger;
+    color: white;
+    font-family: Header_Font;
+}
+
+.main {
+    height: 550px;
+    width: 85vw;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.9) 5%, rgba(0,0,0,0.9) 50%, rgba(0,0,0,0.9) 95%, rgba(0,0,0,0) 100%);
+}
+
+.prvi_dio {
+    display: flex;
+}
+
+.prvi_dio .links {
+    margin-right: 60px;
+    margin-left: 10px;
+    width: 100px;
+    text-align: center;
+}
+
+.links div {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .prvi_dio div span:first-of-type {
+        line-height: 80px;
+    }
+
+    .contact {
+        line-height: 40px;
+    }
+
+    button {
+        border: 1px solid black;
+        border-radius: 15px;
+        height: 60px;
+        width: 180px;
+        font-size: large;
+        margin-top: 25px;
+    }
+
+    button:hover
+    {
+        background-color: darkred;
+    }
+
+    button:active {
+        background-color: orange;
+    }
+
+    a, img, button:hover {
+        transition: 0.1s linear all;
+    }
+
+    .legals {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-left: 100px;
+    }
+
+    .legals > div {
+        background-color: lightblue;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .prvi_dio a:hover
+    {
+        font-size: larger;
+        color: darkred;
+    }
+
+    .prvi_dio a:active
+    {
+        color: orange;
+    }
+
+.iframe_map {
+    width: 400px;
+    height: 400px;
+    margin-right: 10px;
+}
+
+.rights {
+    display: flex;
+}
+    .copyright {
+        text-align: center;
+    }
+
+    .vert_line {
+        height: 50px;
+        border-left: 2px solid white;
+        margin-inline: 20px;
+    }
+
+    .maker {
+        margin: auto 0;
+    }
+
+@media screen and (max-width: 1080px) {
+    .main, .iframe_map, .legals {
+        transition: all ease 300ms;
+    }
+
+    body {
+        font-size: medium;
+    }
+
+    .main {
+        flex-wrap: wrap;
+    }
+
+    .legals {
+        flex-direction: column;
+    }
+
+    .map p {
+        display: none;
+    }
+
+    .iframe_map {
+        width: 300px;
+        height: 300px;
+    } 
+}
+
+@media screen and (max-width: 500px) {
+    .iframe_map {
+        transition: all ease 300ms;
+    }
+
+    .iframe_map {
+        width: 200px;
+        height: 200px;
+    }   
+}
+
+@media screen and (min-width: 451px) or (min-width: 721px) {
+    .main, .iframe_map, .legals {
+        transition: all ease 300ms;
+    }
+}

@@ -6,229 +6,8 @@
         <title>Document</title>
 
         <script src="../js/javascript.js"></script>
+        <link rel="stylesheet" href="../css/header.css">
 
-        <style>
-            @font-face {
-                font-family: Header_Font;
-                src: url(../fonts/Audiowide-Regular.ttf);
-            }
-
-            body {
-                margin: 0;
-                font-size: larger;
-                font-family: Header_Font;
-                color: white;
-            }
-
-            .background_header {
-                width: 85vw;
-
-                margin: 0 auto;
-                display: flex;
-                align-items: flex-end;
-                flex-wrap: wrap;
-
-                background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.9) 5%, rgba(0,0,0,0.9) 50%, rgba(0,0,0,0.9) 95%, rgba(0,0,0,0) 100%);
-            }
-
-            .banner {
-                width: 90%;
-                height: 300px;
-                margin: auto;
-
-                display: flex;
-                align-items: center;
-                justify-content: center;
-
-                background-image: url(../images/background_header.gif);
-                background-position: center;
-                background-size: cover;
-                -webkit-box-shadow: inset 0px 0px 20px 10px rgba(0,0,0,1);
--moz-box-shadow: inset 0px 0px 20px 10px rgba(0,0,0,1);
-box-shadow: inset 0px 0px 20px 10px rgba(0,0,0,1);
-
-
-            }
-
-            .banner_text {
-                font-size: xx-large;
-                text-align: center;
-            }
-
-            .banner_text:hover {
-                text-shadow: 5px 5px 0px black;
-                font-size: 40px;
-                color: lightsalmon;
-            }
-
-            .main {
-                display: flex;
-                height: 160px;
-                width: 100%;
-            }
-
-            .logo {
-                min-width: 160px;
-                height: 160px;
-            }
-
-            .logo img {
-                height: 160px;
-                width: 160px;
-                margin-inline: 25px;
-                filter: invert(98%) sepia(100%) saturate(0%) hue-rotate(325deg) brightness(101%) contrast(105%);
-            }
-
-            .logo img:hover {
-                filter: invert(8%) sepia(97%) saturate(5633%) hue-rotate(360deg) brightness(83%) contrast(109%);
-            }
-
-            .logo img:active {
-                filter: invert(47%) sepia(99%) saturate(1067%) hue-rotate(10deg) brightness(90%) contrast(101%);
-            }
-
-            .menus {
-                display: flex;
-                flex-wrap: wrap;
-                width: 100%;
-            }
-
-            .prvi_red {
-                height: 80px;
-                width: 100%;
-
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: left;
-                align-items: center;
-            }
-
-            .prvi_red > div {
-                height: 30px;
-
-                display: flex;
-                align-items: center;
-
-                padding: 5px;
-                margin-right: 15px;
-            }
-
-                .email {
-                    margin-left: 15px;
-                }
-
-                .social_media {
-                    display: flex;
-                    justify-content: space-around;
-                    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(2835%) hue-rotate(288deg) brightness(117%) contrast(100%);
-                }
-
-                .basket {
-                    margin-left: auto;
-                }
-
-                .login img {
-                    margin-inline: 25px;
-                }
-
-                .basket, .login {
-                    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(2835%) hue-rotate(288deg) brightness(117%) contrast(100%);
-                }
-
-                :is(.basket, .login) img {
-                    height: 30px;
-                    width: 30px;
-                }
-
-            .drugi_red {
-                height: 80px;
-                width: 100%;
-
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-evenly;
-                align-items: center;
-                border-top: 1px white solid;
-            }
-
-            .drugi_red > div {
-                height: 30px;
-
-                display: flex;
-                align-items: center;
-            }
-
-            a {
-                color: white;
-                text-decoration: none;
-            }
-
-            @media screen and (min-width: 951px) {
-                background_header, .logo, .main, .prvi_red, .drugi_red {
-                    transition: all ease 300ms;
-                }
-            }
-            @media screen and (max-width: 950px) {
-                .background_header, .logo, .main, .prvi_red, .drugi_red {
-                    transition: all ease 300ms;
-                }
-
-                body {
-                    font-size: medium;
-                }
-
-                .background_header {
-                    height: 180px;
-                }
-
-                .banner {
-                    height: 150px;
-                }
-
-                .banner_text {
-                font-size: large;
-                }
-
-                .banner_text:hover {
-                    font-size: larger;
-                }
-
-                .logo {
-                    min-width: 65px;
-                    height: 70px;
-                }
-
-                .logo img {
-                height: 70px;
-                width: 70px;
-            }
-
-                .main {
-                    height: 70px;
-                }
-
-                .prvi_red {
-                    height: 35px;
-                }
-
-                     .prvi_red :is(.email, .tel, .social_media p) {
-                        display: none;
-                    }
-
-                    .prvi_red > div {
-                        padding: 0px;
-                        padding-inline: 5px;
-                    }
-
-                    #search_bar {
-                        width: 100px;
-                    }
-
-                .drugi_red {
-                    height: 35px;
-                }
-            }
-        </style>
     </head>
     
     <body>
@@ -238,8 +17,7 @@ box-shadow: inset 0px 0px 20px 10px rgba(0,0,0,1);
                     <div class="banner_text">
                         <p>
                             EKSPLOZIVNI POPUSTI DO ČAK 2%!!!
-                        </p>
-                        <P>
+                            <br>
                             SAMO U TELEPRODAJI!!!
                         </P>
                     </div>
@@ -253,21 +31,20 @@ box-shadow: inset 0px 0px 20px 10px rgba(0,0,0,1);
                     <div class="menus">
                         <div class="prvi_red">
                             <div class="email">
-                                <p>
-                                    <strong>E-mail:</strong> teleprodaja@gmail.com
-                                </p>
+                                <img class="icon" src="../images/other/email.svg" alt="Email">
+                                <span>
+                                    teleprodaja@gmail.com
+                                </span>
                             </div>
 
                             <div class="tel">
-                                <p>
-                                    <strong>Tel:</strong> 022 123 321
-                                </p>
+                                <img class="icon" src="../images/other/telephone.svg" alt="Phone">
+                                <span>
+                                    022 123 321
+                                </span>
                             </div>
 
                             <div class="social_media">
-                                <p>
-                                    Društvene mreže:   
-                                </p>
                                 
                                 <div>
                                     <a id="fb" href="https://www.facebook.com/TeleRecenzija/" target="_blank"><img class="icon" src="../images/other/facebook.svg" alt="Link to Facebook"></a>

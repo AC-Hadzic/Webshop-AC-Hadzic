@@ -6,89 +6,7 @@
         <title>Document</title>
 
         <script src="../js/javascript.js"></script>
-
-        <style>
-            body {
-                margin: 0;
-                font-size: larger;
-                color: white;
-            }
-
-            .main {
-                background-color: gray;
-                height: 500px;
-                width: 85vw;
-                margin: 0 auto;
-
-                display: flex;
-                align-items: center;
-                justify-content: space-evenly;
-            }
-
-            .prvi_dio {
-                display: flex;
-            }
-
-            .legals {
-                display: flex;
-                flex-wrap: wrap;
-
-            }
-
-            .legals > div {
-                width: 50%;
-                background-color: lightblue;
-            }
-
-            .iframe_map {
-                width: 400px;
-                height: 400px;
-            }
-
-            @media screen and (max-width: 1080px) {
-                .main, .iframe_map, .legals {
-                    transition: all ease 300ms;
-                }
-
-                body {
-                    font-size: medium;
-                }
-
-                .main {
-                    flex-wrap: wrap;
-                }
-
-                .legals {
-                    flex-direction: column;
-                }
-
-                .map p {
-                    display: none;
-                }
-
-                .iframe_map {
-                    width: 300px;
-                    height: 300px;
-                } 
-            }
-
-            @media screen and (max-width: 500px) {
-                .iframe_map {
-                    transition: all ease 300ms;
-                }
-
-                .iframe_map {
-                    width: 200px;
-                    height: 200px;
-                }   
-            }
-
-            @media screen and (min-width: 451px) or (min-width: 721px) {
-                .main, .iframe_map, .legals {
-                    transition: all ease 300ms;
-                }
-            }
-        </style>
+        <link rel="stylesheet" href="../css/footer.css">
     </head>
     
     <body>
@@ -96,7 +14,7 @@
             <div class="main">
                 <div class="prvi_dio">
                     <div class="links">
-                        Sadržaj
+                        <span><strong>Sadržaj</strong></span>
                         <div class="home">
                             <a href="../index.html" target="_parent"> Naslovnica </a>
                         </div>
@@ -109,24 +27,22 @@
                             <a href="../about.html" target="_parent"> O nama </a>
                         </div>
 
-                        <div class="contact">
-                            <a href="../contact.html" target="_parent"> Kontaktirajte nas </a>
+                        <div class="contacts">
+                            <a href="../contact.html" target="_parent"> Kontakti </a>
                         </div>     
                     </div>
 
                     <div class="contact">
-                        Kontakti
-                        <p>
-                            <strong>E-mail:</strong> teleprodaja@gmail.com
-                        </p>
-                        <p>
-                            <strong>Tel:</strong> 022 123 321
-                        </p>
-
-                        <p>
-                            <strong>Golub pismonoša:</strong> Oliver Golubović
-                        </p>
-
+                        <span><strong>Kontaktirajte nas!</strong></span>
+                            <br>
+                        <span><strong>E-mail:</strong> teleprodaja@gmail.com </span>
+                            <br>
+                        <span><strong>Tel:</strong> 022 123 321 </span>
+                            <br>
+                        <span><strong>Golub pismonoša:</strong> Oliver Golubović </span>
+                            <br>
+                        <span><strong>Adresa:</strong> ul. Brokulice Hrabroga 2, 22000 Šibenik </span>
+                            <br>
                         <button>Kontakt forma</button>
                     </div>
 
@@ -154,6 +70,21 @@
                         Lokacija   
                     </p>
                     <iframe class="iframe_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6999.21887334161!2d15.884451571492656!3d43.71473987587183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13352585f34010b7%3A0x5cce4b3085802e0!2sObalna%20baterija%202%20ex%20jna!5e1!3m2!1shr!2shr!4v1703952748510!5m2!1shr!2shr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <div class="rights">
+                    <div class="copyright">
+                        <span>Autorska prava © 2024 TeleProdaja.</span> 
+                            <br> 
+                        <span>Sva prava nisu zadržana.</span>
+                    </div>
+
+                    <div class="vert_line"></div>
+                       
+                    <div class="maker">
+                        <span>Izrada web stranica – Vaša tvrtka</span>
+                    </div>
+                    
                 </div>
             </div>
         </object>
