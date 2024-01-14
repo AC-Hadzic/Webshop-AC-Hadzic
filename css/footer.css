@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Header_Font;
+    src: url(../fonts/Audiowide-Regular.ttf);
+}
+
 body {
     margin: 0;
     font-size: larger;
@@ -6,7 +11,7 @@ body {
 }
 
 .main {
-    height: 550px;
+    height: 600px;
     width: 85vw;
     margin: 0 auto;
 
@@ -23,8 +28,7 @@ body {
 }
 
 .prvi_dio .links {
-    margin-right: 60px;
-    margin-left: 10px;
+    margin-right: 40px;
     width: 100px;
     text-align: center;
 }
@@ -70,11 +74,16 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        margin-left: 100px;
+        margin-right: -80px;
     }
 
     .legals > div {
-        background-color: lightblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 280px;
+        height: 40px;
     }
 
     a {
@@ -97,19 +106,33 @@ body {
     width: 400px;
     height: 400px;
     margin-right: 10px;
+    border: 2px solid white;
+    border-radius: 15px;
 }
 
 .rights {
     display: flex;
+    margin-top: 40px;
 }
     .copyright {
         text-align: center;
     }
 
     .vert_line {
-        height: 50px;
+        height: auto;
         border-left: 2px solid white;
-        margin-inline: 20px;
+    }
+
+    .vert_line.one {
+        margin-right: 30px;
+    }
+
+    .vert_line.two {
+        margin-left: 30px;
+    }
+
+    .vert_line.three {
+        margin-inline: 30px;
     }
 
     .maker {
@@ -143,7 +166,7 @@ body {
     } 
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 850px) {
     .iframe_map {
         transition: all ease 300ms;
     }

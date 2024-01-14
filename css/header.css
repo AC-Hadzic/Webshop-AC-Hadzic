@@ -59,6 +59,7 @@ body {
 .logo {
     min-width: 160px;
     height: 160px;
+    margin-inline: 25px;
 }
 
 .logo img {
@@ -84,7 +85,7 @@ body {
 
 .prvi_red {
     height: 80px;
-    width: 100%;
+    width: 95%;
 
     display: flex;
     flex-wrap: wrap;
@@ -109,6 +110,11 @@ body {
     .social_media {
         display: flex;
         justify-content: space-around;
+        width: 200px;
+    }
+
+    .social_media div {
+        width: 50px;
     }
 
     :is(.social_media, .basket, .login) img:hover {
@@ -154,7 +160,7 @@ body {
     }
 
     .login img {
-        margin-right: 25px;
+        margin-right: 10px;
     }
 
     .basket, .login {
@@ -163,7 +169,7 @@ body {
 
 .drugi_red {
     height: 80px;
-    width: 100%;
+    width: 95%;
 
     display: flex;
     flex-wrap: wrap;
@@ -174,6 +180,7 @@ body {
 
 .drugi_red > div {
     height: 30px;
+    width: 200px;
 
     display: flex;
     align-items: center;
@@ -203,68 +210,106 @@ a, img, button, .banner_text:hover {
     transition: 0.1s linear all;
 }
 
-@media screen and (min-width: 951px) {
-    background_header, .logo, .main, .prvi_red, .drugi_red {
-        transition: all ease 300ms;
-    }
-}
-@media screen and (max-width: 950px) {
-    .background_header, .logo, .main, .prvi_red, .drugi_red {
-        transition: all ease 300ms;
-    }
 
+@media screen and (max-width: 1080px) {
     body {
-        font-size: medium;
-    }
-
-    .background_header {
-        height: 180px;
-    }
-
-    .banner {
-        height: 150px;
-    }
-
-    .banner_text {
-    font-size: large;
-    }
-
-    .banner_text:hover {
-        font-size: larger;
-    }
-
-    .logo {
-        min-width: 65px;
-        height: 70px;
+        font-size: small;
     }
 
     .logo img {
-    height: 70px;
-    width: 70px;
+        height: 120px;
+        width: 120px;
+    }
+
+    #search_bar {
+        width: 120px;
+        height: 30px;
+        margin-inline: 0px;
+    }
+
+    .social_media {
+        width: 160px;
+    }
+
+    .prvi_red img {
+        height: 25px;
+    }
+
+    .prvi_red > div:not(.basket, .login)
+    {
+        margin-inline: 15px;
+    }
 }
+
+@media screen and (max-width: 850px) {
+    body {
+        font-size: small;
+    }
+
+    .background_header {
+        height: 190px;
+    }
+
+    .banner {
+        height: 120px;
+    }
+
+    .banner_text {
+        font-size: medium;
+    }
+
+    .banner_text:hover {
+        font-size: large;
+    }
+
+    .logo {
+        min-width: 60px;
+        height: 60px;
+        margin: 0px;
+    }
+
+    .logo img {
+        height: 60px;
+        width: 60px;
+        margin-left: 10px;
+    }
 
     .main {
         height: 70px;
     }
 
-    .prvi_red {
+    .prvi_red img {
+        height: 20px;
+    }
+
+    .prvi_red, .drugi_red {
         height: 35px;
     }
 
-         .prvi_red :is(.email, .tel, .social_media p) {
-            display: none;
-        }
+    .prvi_red > div:not(.basket, .login)
+    {
+        margin-inline: 0px;
+    }
 
-        .prvi_red > div {
-            padding: 0px;
-            padding-inline: 5px;
-        }
+    .prvi_red :is(.email, .tel, .social_media), .drugi_red .faq {
+        display: none;
+    }
 
-        #search_bar {
-            width: 100px;
-        }
+    .prvi_red > div {
+        padding: 0px;
+    }
 
-    .drugi_red {
-        height: 35px;
+    #search_bar {
+        width: 120px;
+        height: 30px;
+        margin-inline: 0px;
+    }
+
+    :is(.social_media, .basket, .login) img:hover {
+        height: 30px;
+        width: 30px;
+    }
+    .drugi_red > div {
+        width: auto;
     }
 }
