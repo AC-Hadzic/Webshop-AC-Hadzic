@@ -172,15 +172,15 @@ img {
 }
 
 .blog img:hover {
-    height: 245px;
-    width: 305px;
+    height: 230px;
+    width: 310px;
     transition: 0.1s linear all;
     filter: brightness(115%);
 }
 
 .blog section:nth-of-type(2) img:hover {
-    height: 185px;
-    width: 305px;
+    height: 190px;
+    width: 310px;
     transition: 0.1s linear all;
 }
 
@@ -206,14 +206,29 @@ img {
 .newsletter {
     height: max-content;
     width: 100%;
+}
+
+.newsletter p {
     text-align: center;
 }
 
 .newsletter label {
+    font-size: small;
+}
+
+.newsletter #mail {
     font-size: medium;
 }
 
-.newsletter input {
+.newsletter div {
+    margin-left: 25px;
+}
+
+.newsletter input[type="checkbox"] {
+    accent-color: darkred;
+}
+
+.newsletter input[type="email"] {
     border: 2px solid black;
     border-radius: 5px;
     height: 40px;
@@ -230,7 +245,7 @@ input::placeholder {
     border-radius: 25px;
     height: 50px;
     width: 100px; 
-    margin: 10px;
+    margin: 25px;
 }
 
 button:hover
