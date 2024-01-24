@@ -64,6 +64,7 @@ hr {
     button:hover
     {
         background-color: darkred;
+        color: white;
     }
 
     button:active {

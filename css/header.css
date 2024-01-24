@@ -5,6 +5,7 @@
 
 body {
     margin: 0;
+    padding: 0;
     font-size: larger;
     font-family: Header_Font;
     color: white;
@@ -18,7 +19,6 @@ body {
     flex-wrap: wrap;
 
     background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.9) 5%, rgba(0,0,0,0.9) 50%, rgba(0,0,0,0.9) 95%, rgba(0,0,0,0) 100%);
-
 }
 
 .banner {
@@ -60,7 +60,7 @@ span {
 
 .main {
     display: flex;
-    height: 160px;
+    height: 165px;
     width: 100%;
 }
 
@@ -300,7 +300,7 @@ a, img, button, .banner_text, span:hover {
     }
 
     .prvi_red, .drugi_red {
-        height: 35px;
+        height: 34px;
     }
 
     .prvi_red > div:not(.basket, .login)

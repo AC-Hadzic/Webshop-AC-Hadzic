@@ -14,3 +14,22 @@ document.addEventListener("DOMContentLoaded", function ()
         iframes.forEach(adjustIframeHeight);
     }
 );
+
+function delete_all()
+{
+    var naslov = document.getElementById("naslov");
+    var kosarica = document.getElementById("u_kosarici");
+    var cijena = document.getElementById("cijena");
+    var prazno = document.getElementById("empty_basket");
+
+    naslov.remove();
+    kosarica.remove();
+    cijena.remove();
+
+    prazno.style.display = "block";
+}
+
+function refresh()
+{
+    location.reload();
+}

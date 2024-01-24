@@ -6,6 +6,7 @@
         <title>Košarica</title>
 
         <link rel="stylesheet" href="css/cart.css">
+        <link rel="stylesheet" href="../css/global.css">
         <script src="js/javascript.js"></script>
     </head>
 
@@ -14,47 +15,87 @@
             <iframe src="partials/header.html" width="100%" class="auto-height-iframe"></iframe>
         </header>
 
+        
         <main>
             <article class="total_basket">
-                <div class="naslov">
+                <div id="empty_basket">
+                    <h1> Nemate niti jedan proizvod u košarici. Kako to???</h1>
+                    <span> Sramota! Klikni na gumb ispod da se vratiš u naš super katalog prosječnih proizvoda! </span><br>
+                    <a href="products.html"><button> Vrati se u kupnju </button></a> 
+                </div>
+                
+                <div class="naslov" id="naslov">
                     <img src="../images/other/cart.svg" alt="Basket">
-                    <h2> Proizvodi u košarici: - x3</h2>
+                    <h2> Proizvodi u košarici: - <span>x3</span></h2>
                 </div>
 
-                <div class="u_kosarici">
-                    <a href="">
-                        <section>
-                            <h3> Apple Cloth </h3>
-                            <img src="images/proizvodi/cloth.jpg" alt="Apple Cloth">
-                            <div class="intern_product">
-                                <span> 99,00 EUR </span>
-                                <div class="vert_line"></div>
-                                <span> Komada (3x) </span>
-                            </div>
-                        </section>
-                    </a>
+                <div class="u_kosarici" id="u_kosarici">
+                    <table>
+                        <tr class="naslovi">
+                            <th> Proizvodi: </th>
+                            <th> Cijena: </th>
+                            <th> Količina: </th>
+                            <th> Ukupno: </th>                            
+                        </tr>
+
+                        <tr class="podaci">
+                            <td>
+                                <a href="">
+                                    <section>
+                                        <img src="images/proizvodi/cloth.jpg" alt="Apple Cloth">
+                                        <div class="internal_data">
+                                            <h3> Apple Cloth </h3>
+                                            
+                                            <span><br>Svemoguća krpa napravljena od mekog, nehrđajućeg materijala. Apple Cloth čisti svaki Apple zaslon, uključujući staklo, sigurno i učinkovito.<br><br></span>
+                                            <span>Šifra artikla: d1.51.810.91.</span>    
+                                        </div>
+                                    </section>
+                                </a>
+                            </td>
+                            <td> 99,00 EUR </td>
+                            <td> 3 </td>
+                            <td> 297,00 EUR </td>
+                        </tr>
+                    </table>
                 </div>
-                <br>
-                <div class="cijena">
-                    <h2> Iznos košarice: </h2>
 
-                    <h4> Cijena proizvoda u košarici: </h3>
-                    <span> 297,00 EUR </span>
+                <hr>
 
-                    <h4> Popusti: </h3>
-                    <span> 0% - 0,00 EUR </span>
-                    <br>
-                    <span> Unesite kod za popust: </span> <input type="text" name="kod" id="kod" placeholder="hahaha ne postoji kod">
+                <div class="cijena" id="cijena">
+                    <div class="buttons">
+                        <a href="products.html"><button> Vrati se u kupnju </button></a> 
+                        <button onclick="refresh()"> Ažuriraj košaricu </button>
+                        <button id="delete_all" onclick="delete_all()"> Poništi sve </button>
+                        <button> KUPI </button>    
+                    </div>
 
-                    <h4> Dodatni troškovi, kamate, carine i reket:</h3>
-                    <span> 0,00 EUR </span>
+                    <hr>
 
-                    <h2> Sveukupno: </h3>
-                    <span> 297,00 EUR </span>
+                    <div class="info_cijena">
+                        <table>
+                            <tr>
+                                <th> Popusti: </th>
+                                <td> 0% - 0,00 EUR</td>
+                            </tr>
+
+                            <tr>
+                                <th> Kod za popust: </th>
+                                <td> <input type="text" name="kod" id="kod" placeholder="hahaha ne postoji kod"> </td>
+                            </tr>
+
+                            <tr>
+                                <th> Dodatni troškovi, kamate, carine i reket: </th>
+                                <td> 0,00 EUR </td>
+                            </tr>
+                        </table>
+
+                        <br><br>
+
+                        <span> Sveukupno: </span>
+                        <span> 297,00 EUR </span>   
+                    </div>
                 </div>
             </article>
-
-            
         </main>
 
         <footer>

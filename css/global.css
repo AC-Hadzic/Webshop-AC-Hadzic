@@ -1,0 +1,25 @@
+.auto-height-iframe {
+    border: none;
+    width: 100%;
+    margin: 0;
+}
+
+@font-face {
+    font-family: Main_Font;
+    src: url(../fonts/Tektur-VariableFont_wdth\,wght.ttf);
+}
+
+header {
+    margin-bottom: -6px;
+}
+
+body {
+    font-family: Main_Font;
+    margin: 0px;
+    font-size: larger;
+    background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    color: white;
+}
