@@ -33,3 +33,19 @@ function refresh()
 {
     location.reload();
 }
+
+function pop_me()
+{
+    const oznaceno = document.getElementById('card');
+    const pokazi = document.getElementById('show_up');
+
+    if (oznaceno.checked) {
+        pokazi.style.display = 'block';
+    } else {
+        pokazi.style.display = 'none';
+    }
+}
+
+window.onload = function(){
+    pay_form.reset();
+}

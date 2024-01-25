@@ -1,0 +1,183 @@
+main {
+    margin: 0 auto;
+    width: 85vw;
+    background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.9) 5%, rgba(0,0,0,0.9) 50%, rgba(0,0,0,0.9) 95%, rgba(0, 0, 0, 0) 100%);
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+hr {
+    width: 98%;
+    border: 1px solid white;
+}
+
+.total_basket {
+    margin-inline: 80px;
+    width: 100%;
+}
+
+a, img, button:hover {
+    transition: 0.1s linear all;
+}
+
+.naslov {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.naslov img {
+    filter: invert(98%) sepia(100%) saturate(0%) hue-rotate(325deg) brightness(101%) contrast(105%);
+
+    height: 30px;
+    width: 30px;
+    margin-right: 15px;
+}
+
+.naslov:hover img {
+    height: 40px;
+    width: 40px;
+}
+
+.naslov:hover span {
+    font-size: 40px;
+    color: orange;
+}
+
+section {
+    height: max-content;
+    display: flex;
+    margin: 10px;
+}
+
+.internal_data {
+    width: 100%;
+    font-size: medium;
+    margin-inline: 25px;
+}
+
+.internal_data span:nth-of-type(1) {
+    font-style: italic;
+}
+
+.internal_data span:nth-of-type(2) {
+    font-weight: bold;
+}
+
+section > img {
+    height: 140px;
+    width: 140px;
+    border-radius: 25px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    margin: 0px;
+}
+
+.vert_line {
+    height: 80%;
+    max-width: 0px;
+    border-left: 2px white solid;
+    margin-inline: 10px;
+}
+
+a:hover img {
+    box-shadow: 0px 0px 25px 5px darkred;
+    width: 160px;
+    height: 160px;
+}
+
+.cijena {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.info_cijena {
+    width: 100%;
+    padding: 30px 0px;
+}
+
+h4 {
+    margin-bottom: 0px;
+}
+
+h2:nth-of-type(2) {
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+input::placeholder {
+    font-style: italic;
+    font-size: larger;
+}
+
+input[type = "radio"] {
+    height: 20px;
+    width: 20px;
+    margin: 10px;
+}
+
+input[type = "radio"]:checked {
+    accent-color: darkred;
+}
+
+form img {
+    filter: invert(98%) sepia(100%) saturate(0%) hue-rotate(325deg) brightness(101%) contrast(105%);
+    
+    height: 25px;
+    width: 25px;
+    margin-right: 5px;
+    margin-bottom: -5px;
+}
+
+#show_up {
+    display: none;
+}
+
+table {
+    width: 100%;
+}
+
+th:not(:first-of-type) {
+    border-left: 2px solid white;
+    height: 40px;
+}
+
+.podaci td:not(:nth-of-type(1)) {
+    text-align: center;
+    min-width: 120px;
+    font-weight: bold;
+}
+
+button {
+    border: 2px solid black;
+    border-radius: 25px;
+    height: 50px;
+    width: 150px; 
+    margin: 25px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.info_cijena th{
+    text-align: left;
+}
+
+.info_cijena td {
+    text-align: right;
+}
+
+.info_cijena span:nth-last-of-type(2) {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.info_cijena span:nth-last-of-type(1) {
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+}

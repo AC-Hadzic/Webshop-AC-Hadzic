@@ -3,9 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Košarica</title>
+        <title> Plaćanje </title>
 
-        <link rel="stylesheet" href="css/cart.css">
+        <link rel="stylesheet" href="css/checkout.css">
         <link rel="stylesheet" href="../css/global.css">
     </head>
 
@@ -14,15 +14,8 @@
             <iframe src="partials/header.html" width="100%" class="auto-height-iframe"></iframe>
         </header>
 
-        
         <main>
             <article class="total_basket">
-                <div id="empty_basket">
-                    <h1> Nemate niti jedan proizvod u košarici. Kako to???</h1>
-                    <span> Sramota! Klikni na gumb ispod da se vratiš u naš super katalog prosječnih proizvoda! </span><br>
-                    <a href="products.html"><button> Vrati se u kupnju </button></a> 
-                </div>
-                
                 <div class="naslov" id="naslov">
                     <img src="../images/other/cart.svg" alt="Basket">
                     <h2> Proizvodi u košarici: - <span>x3</span></h2>
@@ -60,26 +53,64 @@
 
                 <hr>
 
+                <div class="podaci_placanje">
+                    <form method="post" name="pay_form">
+                        <h4> Način plaćanja </h4>
+
+                        <input type="radio" name="nacin" id="solo" onclick="pop_me()" checked>
+                        <label for="solo"><img src="/images/other/box.svg" alt="Credit Card"> Pouzećem </label>
+                            <br>
+                        <input type="radio" name="nacin" id="card" onclick="pop_me()">
+                        <label for="card"><img src="/images/other/credit_card.svg" alt="Credit Card"> Karticom </label>
+                            
+                        <br><br>
+                        
+                        <h3> Podaci o kupcu: </h3>
+
+                        <label for="ime"> Ime: </label>
+                        <input type="text" name="ime" id="ime">
+                            <br>
+                        <label for="prezime"> Prezime: </label>
+                        <input type="text" name="prezime" id="prezime">
+                            <br>
+                        <label for="adresa"> Adresa: </label>
+                        <input type="text" name="adresa" id="adresa">
+                            <br>
+                        <label for="adresa_dostava"> Adresa dostave: </label>
+                        <input type="text" name="adresa_dostava" id="adresa_dostava">
+                            <br>
+                        <label for="tel"> Telefon:</label>
+                        <input type="tel" name="tel" id="tel">
+                            <br>
+
+                        <div id="show_up">
+                            <br><br>
+                            <h3> Podaci o kartici: </h3>
+
+                            <label for="ime_prez"> Ime i prezime: </label>
+                            <input type="text" name="ime_prez" id="ime_prez">
+                                <br>
+                            <label for="broj"> Broj kartice: </label>
+                            <input type="text" name="broj" id="broj">
+                                <br>
+                            <label for="exp"> Datum isteka:</label>
+                            <input type="text" id="exp" placeholder="02/23">
+                                <br>
+                            <label for="cvv"> CVV: </label>
+                            <input type="text" name="cvv" id="cvv" placeholder="144">
+                        </div>
+
+                    </form>
+                </div>
+
+                <hr>
+
                 <div class="cijena" id="cijena">
-                    <div class="buttons">
-                        <a href="products.html"><button> Vrati se u kupnju </button></a> 
-                        <button onclick="refresh()"> Ažuriraj košaricu </button>
-                        <button id="delete_all" onclick="delete_all()"> Poništi sve </button>
-                        <a href="checkout.html"><button> KUPI </button></a>
-                    </div>
-
-                    <hr>
-
                     <div class="info_cijena">
                         <table>
                             <tr>
-                                <th> Popusti: </th>
+                                <th>Uneseni kodovi za popuste: </th>
                                 <td> 0% - 0,00 EUR</td>
-                            </tr>
-
-                            <tr>
-                                <th> Kod za popust: </th>
-                                <td> <input type="text" name="kod" id="kod" placeholder="hahaha ne postoji kod"> </td>
                             </tr>
 
                             <tr>
@@ -101,6 +132,6 @@
             <iframe src="partials/footer.html" width="100%" class="auto-height-iframe"> </iframe>
         </footer>
 
-        <script src="../js/javascript.js"></script>
+        <script src="js/javascript.js"></script>
     </body>
 </html>

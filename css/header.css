@@ -218,7 +218,6 @@ a, img, button, .banner_text, span:hover {
     transition: 0.1s linear all;
 }
 
-
 @media screen and (max-width: 1080px) {
     body {
         font-size: small;
@@ -246,6 +245,10 @@ a, img, button, .banner_text, span:hover {
     .prvi_red > div:not(.basket, .login)
     {
         margin-inline: 15px;
+    }
+
+    .banner_text:hover span {
+        font-size: 60px;
     }
 }
 
