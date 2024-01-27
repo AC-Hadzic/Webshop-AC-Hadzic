@@ -1,16 +1,7 @@
 main {
-    margin: 0 auto;
-    width: 85vw;
-    background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.9) 5%, rgba(0,0,0,0.9) 50%, rgba(0,0,0,0.9) 95%, rgba(0, 0, 0, 0) 100%);
-
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
-
-hr {
-    width: 98%;
-    border: 1px solid white;
 }
 
 .total_basket {
@@ -67,8 +58,8 @@ section {
 }
 
 section > img {
-    height: 140px;
-    width: 140px;
+    height: 120px;
+    width: 120px;
     border-radius: 25px;
     margin-bottom: 10px;
 }
@@ -86,8 +77,8 @@ h3 {
 
 a:hover img {
     box-shadow: 0px 0px 25px 5px darkred;
-    width: 160px;
-    height: 160px;
+    width: 140px;
+    height: 140px;
 }
 
 .cijena {
@@ -180,4 +171,129 @@ button {
     float: right;
     font-size: 40px;
     font-weight: bold;
+}
+
+.insert_info {
+    display: flex;
+    font-size: medium;
+    line-height: 30px;
+}
+
+.insert_info th {
+    padding-right: 10px;
+}
+
+.podaci_kupac {
+    margin-right: 100px;
+}
+
+.insert_info input {
+    height: 30px;
+    margin: 5px 0;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 1080px)
+{
+    .internal_data {
+        display: none;
+    }
+
+    .podaci td img {
+        margin: 0 auto;
+    }
+
+    .podaci_kupac {
+        margin-right: 50px;
+    }
+
+    h2 {
+        font-size: larger;
+    }
+
+    .info_cijena span {
+        font-size: 30px!important;
+    }
+}
+
+@media screen and (max-width: 850px) 
+{
+    .insert_info {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .naslov, .naslovi, .podaci {
+        font-size: small;
+    }
+
+    .naslov img {
+        width: 20px;
+        height: 20px;
+        margin-inline: 10px;
+    }
+
+    .naslov:hover span {
+        font-size: 20px;
+    }
+
+    section > img {
+        height: 60px;
+        width: 60px;
+        border-radius: 25px;
+        margin-bottom: 10px;
+    }
+    a:hover img {
+        box-shadow: 0px 0px 25px 5px darkred;
+        width: 70px;
+        height: 70px;
+    }
+
+    .podaci_placanje {
+        font-size: small;
+        margin-left: 30px;
+    }
+
+    .podaci_placanje input {
+        width: 100px;
+        height: 25px;
+        margin: 0px;
+        margin-top: 5px;
+    }
+
+    .cijena {
+        font-size: medium;
+    }
+
+    .cijena th {
+        width: 50%;
+    }
+
+    .cijena td {
+        padding-right: 40px;
+    }
+
+    .cijena table {
+        margin-left: 20px;
+    }
+
+    .info_cijena span {
+        font-size: 16px !important;
+    }
+
+    .info_cijena span:first-of-type {
+        margin-left: 20px;
+    }
+
+    .info_cijena span:last-of-type {
+        margin-right: 20px;
+    }
+
+    .podaci td:not(:nth-of-type(1)) {
+        min-width: auto;
+    }
+
+    hr {
+        margin: 0;
+    }
 }

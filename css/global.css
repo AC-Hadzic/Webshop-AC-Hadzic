@@ -24,6 +24,17 @@ body {
     color: white;
 }
 
+main {
+    margin: 0 auto;
+    width: 85vw;
+    background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.9) 5%, rgba(0,0,0,0.9) 50%, rgba(0,0,0,0.9) 95%, rgba(0, 0, 0, 0) 100%);
+}
+
+hr {
+    width: 98%;
+    border: 1px solid white;
+}
+
 a {
     text-decoration: none;
     color: white;
@@ -52,4 +63,11 @@ button:hover
 
 button:active {
     background-color: orange;
+}
+
+@media screen and (max-width: 850px)
+{
+    main {
+        width: 95vw;
+    }
 }

@@ -1,16 +1,7 @@
 main {
-    margin: 0 auto;
-    width: 85vw;
-    background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.9) 5%, rgba(0,0,0,0.9) 50%, rgba(0,0,0,0.9) 95%, rgba(0, 0, 0, 0) 100%);
-
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
-
-hr {
-    width: 98%;
-    border: 1px solid white;
 }
 
 .total_basket {
@@ -132,7 +123,7 @@ input::placeholder {
 
 input {
     border: 2px solid black;
-    border-radius: 5px;
+    border-radius: 10px;
     height: 35px;
     width: 200px;
     margin: 10px;
@@ -288,6 +279,10 @@ button {
         font-style: italic;
         font-size: small;
     }
+
+    #empty_basket {
+        font-size: 40px;
+    } 
 }
 
 @media screen and (max-width: 850px) 
@@ -339,4 +334,9 @@ button {
     hr {
         width: 90%;
     }
+
+    #empty_basket {
+        font-size: 20px;
+        padding: 20px;
+    } 
 }

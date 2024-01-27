@@ -38,7 +38,7 @@
                                         <div class="internal_data">
                                             <h3> Apple Cloth </h3>
                                             
-                                            <span><br>Svemoguća krpa napravljena od mekog, nehrđajućeg materijala. Apple Cloth čisti svaki Apple zaslon, uključujući staklo, sigurno i učinkovito.<br><br></span>
+                                            <span>Svemoguća krpa napravljena od mekog, nehrđajućeg materijala. Apple Cloth čisti svaki Apple zaslon, uključujući staklo, sigurno i učinkovito.<br><br></span>
                                             <span>Šifra artikla: d1.51.810.91.</span>    
                                         </div>
                                     </section>
@@ -54,7 +54,7 @@
                 <hr>
 
                 <div class="podaci_placanje">
-                    <form method="post" name="pay_form">
+                    <form method="post" id="pay_form">
                         <h4> Način plaćanja </h4>
 
                         <input type="radio" name="nacin" id="solo" onclick="pop_me()" checked>
@@ -64,42 +64,64 @@
                         <label for="card"><img src="/images/other/credit_card.svg" alt="Credit Card"> Karticom </label>
                             
                         <br><br>
-                        
-                        <h3> Podaci o kupcu: </h3>
+                        <div class="insert_info">
+                            <div class="podaci_kupac">
+                                <h3> Podaci o kupcu: </h3>
+                                <table>
+                                    <tr>
+                                        <th><label for="ime"> Ime: </label></th>
+                                        <td><input type="text" name="ime" id="ime"></td>
+                                    </tr>
 
-                        <label for="ime"> Ime: </label>
-                        <input type="text" name="ime" id="ime">
-                            <br>
-                        <label for="prezime"> Prezime: </label>
-                        <input type="text" name="prezime" id="prezime">
-                            <br>
-                        <label for="adresa"> Adresa: </label>
-                        <input type="text" name="adresa" id="adresa">
-                            <br>
-                        <label for="adresa_dostava"> Adresa dostave: </label>
-                        <input type="text" name="adresa_dostava" id="adresa_dostava">
-                            <br>
-                        <label for="tel"> Telefon:</label>
-                        <input type="tel" name="tel" id="tel">
-                            <br>
+                                    <tr>
+                                        <th><label for="prezime"> Prezime: </label></th>
+                                        <td><input type="text" name="prezime" id="prezime"></td>
+                                    </tr>
 
-                        <div id="show_up">
-                            <br><br>
-                            <h3> Podaci o kartici: </h3>
+                                    <tr>
+                                        <th><label for="adresa"> Adresa: </label></th>
+                                        <td><input type="text" name="adresa" id="adresa"></td>
+                                    </tr>
 
-                            <label for="ime_prez"> Ime i prezime: </label>
-                            <input type="text" name="ime_prez" id="ime_prez">
+                                    <tr>
+                                        <th><label for="adresa_dostava"> Adresa dostave: </label></th>
+                                        <td><input type="text" name="adresa_dostava" id="adresa_dostava"></td>
+                                    </tr>
+
+                                    <tr>
+                                        <th><label for="tel"> Telefon:</label></th>
+                                        <td> <input type="tel" name="tel" id="tel"></td>
+                                    </tr>
+                                </table>
                                 <br>
-                            <label for="broj"> Broj kartice: </label>
-                            <input type="text" name="broj" id="broj">
-                                <br>
-                            <label for="exp"> Datum isteka:</label>
-                            <input type="text" id="exp" placeholder="02/23">
-                                <br>
-                            <label for="cvv"> CVV: </label>
-                            <input type="text" name="cvv" id="cvv" placeholder="144">
+                            </div>
+                            
+
+                            <div id="show_up">
+                                <h3> Podaci o kartici: </h3>
+                                <table>
+                                    <tr>
+                                        <th><label for="ime_prez"> Ime i prezime: </label></th>
+                                        <td><input type="text" name="ime_prez" id="ime_prez"></td>
+                                    </tr>
+
+                                    <tr>
+                                        <th> <label for="broj"> Broj kartice: </label></th>
+                                        <td><input type="text" name="broj" id="broj"></td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <th><label for="exp"> Datum isteka:</label></th>
+                                        <td><input type="text" id="exp" placeholder="02/23"></td>
+                                    </tr>
+
+                                    <tr>
+                                        <th><label for="cvv"> CVV: </label></th>
+                                        <td><input type="text" name="cvv" id="cvv" placeholder="144"></td>
+                                    </tr>
+                                </table>
+                            </div>   
                         </div>
-
                     </form>
                 </div>
 

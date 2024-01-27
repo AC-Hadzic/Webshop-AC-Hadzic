@@ -161,6 +161,7 @@ span {
         font-size: large;
         height: 40px;
         width: 200px;
+        border-radius: 10px;
     }
 
     .basket {
@@ -259,6 +260,7 @@ a, img, button, .banner_text, span:hover {
 
     .background_header {
         height: 190px;
+        width: 95vw;
     }
 
     .banner {
@@ -321,7 +323,7 @@ a, img, button, .banner_text, span:hover {
 
     #search_bar {
         width: 120px;
-        height: 30px;
+        height: 25px;
         margin-inline: 0px;
     }
 
