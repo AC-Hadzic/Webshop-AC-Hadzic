@@ -187,7 +187,7 @@ img {
 
 .newsletter input[type="email"] {
     border: 2px solid black;
-    border-radius: 10px;
+    border-radius: 25px;
     height: 40px;
     width: 200px;
     margin: 10px;
@@ -265,6 +265,10 @@ button:active {
         width: 200px;
         height: 200px;
     }
+
+    .popularni_proizvodi section {
+        height: 400px;
+    }
 }
 
 @media screen and (max-width: 850px) {
@@ -300,5 +304,9 @@ button:active {
 
     .newsletter {
         font-size: medium;
+    }
+
+    .popularni_proizvodi section {
+        height: 350px;
     }
 }

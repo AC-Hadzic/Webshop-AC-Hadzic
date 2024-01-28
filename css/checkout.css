@@ -199,7 +199,14 @@ button[type="submit"] {
     border-radius: 50px;
     margin-top: 80px;
     margin-left: 100px;
-    font-size: 30px;
+    font-size: 25px;
+}
+
+.info_cijena span:first-of-type:hover + span, .info_cijena span:last-of-type:hover {
+    color: orange;
+    box-shadow: 0px 0px 25px 5px darkred;
+    background-color: rgb(90, 0, 0);
+    border-radius: 25px;
 }
 
 @media screen and (max-width: 1080px)
@@ -228,7 +235,7 @@ button[type="submit"] {
         width: 160px;
         height: 80px;
         margin-left: 60px;
-        font-size: 25px;
+        font-size: 20px;
     }
 }
 
@@ -318,6 +325,6 @@ button[type="submit"] {
         height: 60px;
         margin-top: 20px;
         margin-inline: auto;
-        font-size: 20px;
+        font-size: 15px;
     }
 }

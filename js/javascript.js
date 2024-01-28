@@ -45,9 +45,3 @@ function pop_me()
         pokazi.style.display = 'none';
     }
 }
-
-var pay_form = document.getElementById("pay_form"); 
-
-window.onload = function(){
-    pay_form.reset();
-}

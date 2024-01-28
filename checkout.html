@@ -7,6 +7,7 @@
 
         <link rel="stylesheet" href="css/checkout.css">
         <link rel="stylesheet" href="../css/global.css">
+        <link rel="icon" href="favicon.svg">
     </head>
 
     <body>
@@ -54,13 +55,13 @@
                 <hr>
 
                 <div class="podaci_placanje">
-                    <form method="post" id="pay_form">
+                    <form action="" method="post" id="pay_form">
                         <h4> Način plaćanja </h4>
 
-                        <input type="radio" name="nacin" id="solo" onclick="pop_me()" checked>
+                        <input type="radio" name="nacin" id="solo" onclick="pop_me()" autocomplete="off" required>
                         <label for="solo"><img src="/images/other/box.svg" alt="Credit Card"> Pouzećem </label>
                             <br>
-                        <input type="radio" name="nacin" id="card" onclick="pop_me()">
+                        <input type="radio" name="nacin" id="card" onclick="pop_me()" autocomplete="off" required>
                         <label for="card"><img src="/images/other/credit_card.svg" alt="Credit Card"> Karticom </label>
                             
                         <br><br>
@@ -70,27 +71,27 @@
                                 <table>
                                     <tr>
                                         <th><label for="ime"> Ime: </label></th>
-                                        <td><input type="text" name="ime" id="ime"></td>
+                                        <td><input type="text" name="ime" id="ime" required></td>
                                     </tr>
 
                                     <tr>
                                         <th><label for="prezime"> Prezime: </label></th>
-                                        <td><input type="text" name="prezime" id="prezime"></td>
+                                        <td><input type="text" name="prezime" id="prezime" required></td>
                                     </tr>
 
                                     <tr>
                                         <th><label for="adresa"> Adresa: </label></th>
-                                        <td><input type="text" name="adresa" id="adresa"></td>
+                                        <td><input type="text" name="adresa" id="adresa" required></td>
                                     </tr>
 
                                     <tr>
                                         <th><label for="adresa_dostava"> Adresa dostave: </label></th>
-                                        <td><input type="text" name="adresa_dostava" id="adresa_dostava"></td>
+                                        <td><input type="text" name="adresa_dostava" id="adresa_dostava" required></td>
                                     </tr>
 
                                     <tr>
                                         <th><label for="tel"> Telefon:</label></th>
-                                        <td> <input type="tel" name="tel" id="tel"></td>
+                                        <td> <input type="tel" name="tel" id="tel" required></td>
                                     </tr>
                                 </table>
                                 <br>
@@ -102,27 +103,27 @@
                                 <table>
                                     <tr>
                                         <th><label for="ime_prez"> Ime i prezime: </label></th>
-                                        <td><input type="text" name="ime_prez" id="ime_prez"></td>
+                                        <td><input type="text" name="ime_prez" id="ime_prez" required></td>
                                     </tr>
 
                                     <tr>
                                         <th> <label for="broj"> Broj kartice: </label></th>
-                                        <td><input type="text" name="broj" id="broj"></td>
+                                        <td><input type="text" name="broj" id="broj" required autocomplete="off"></td>
                                     </tr>
                                     
                                     <tr>
                                         <th><label for="exp"> Datum isteka:</label></th>
-                                        <td><input type="text" id="exp" placeholder="02/23"></td>
+                                        <td><input type="text" id="exp" placeholder="02/23" required autocomplete="off"></td>
                                     </tr>
 
                                     <tr>
                                         <th><label for="cvv"> CVV: </label></th>
-                                        <td><input type="text" name="cvv" id="cvv" placeholder="144"></td>
+                                        <td><input type="text" name="cvv" id="cvv" placeholder="144" required autocomplete="off"></td>
                                     </tr>
                                 </table>
                             </div> 
                             
-                            <button type="submit"> PLATI </button>
+                            <button type="submit"> Dovrši narudžbu </button>
                         </div>
                     </form>
                 </div>

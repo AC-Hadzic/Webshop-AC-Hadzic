@@ -123,7 +123,7 @@ input::placeholder {
 
 input {
     border: 2px solid black;
-    border-radius: 10px;
+    border-radius: 25px;
     height: 35px;
     width: 200px;
     margin: 10px;

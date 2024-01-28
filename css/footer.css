@@ -54,7 +54,7 @@ hr {
 
     button {
         border: 1px solid black;
-        border-radius: 15px;
+        border-radius: 30px;
         height: 60px;
         width: 180px;
         font-size: large;
@@ -113,7 +113,7 @@ hr {
     height: 400px;
     margin-right: 10px;
     border: 2px solid white;
-    border-radius: 15px;
+    border-radius: 25px;
 }
 
 .rights {
@@ -204,7 +204,6 @@ hr {
     }
 
     button {
-        border-radius: 10px;
         height: 40px;
         width: 120px;
         font-size: medium;
@@ -290,7 +289,6 @@ hr {
     }
 
     button {
-        border-radius: 10px;
         height: 30px;
         width: 100px;
         font-size: small;
