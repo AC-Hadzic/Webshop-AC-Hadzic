@@ -18,7 +18,7 @@
         <main>
             <article class="total_basket">
                 <div class="naslov" id="naslov">
-                    <img src="../images/other/cart.svg" alt="Basket">
+                    <img src="../images/icons/cart.svg" alt="Basket icon">
                     <h2> Proizvodi u košarici: - <span>x3</span></h2>
                 </div>
 
@@ -58,11 +58,11 @@
                     <form action="" method="post" id="pay_form">
                         <h4> Način plaćanja </h4>
 
-                        <input type="radio" name="nacin" id="solo" onclick="pop_me()" autocomplete="off" required>
-                        <label for="solo"><img src="/images/other/box.svg" alt="Credit Card"> Pouzećem </label>
+                        <input type="radio" name="nacin" id="solo" onclick="pop_me()" autocomplete="off" required value="pay_cash">
+                        <label for="solo"><img src="/images/icons/box.svg" alt="Box icon"> Pouzećem </label>
                             <br>
-                        <input type="radio" name="nacin" id="card" onclick="pop_me()" autocomplete="off" required>
-                        <label for="card"><img src="/images/other/credit_card.svg" alt="Credit Card"> Karticom </label>
+                        <input type="radio" name="nacin" id="card" onclick="pop_me()" autocomplete="off" required value="pay_card">
+                        <label for="card"><img src="/images/icons/credit_card.svg" alt="Credit Card icon"> Karticom </label>
                             
                         <br><br>
                         <div class="insert_info">
@@ -125,8 +125,20 @@
                             
                             <button type="submit"> Dovrši narudžbu </button>
                         </div>
+
+                        <article class="newsletter">
+                            <div>
+                                <input type="checkbox" name="obrada_podataka" id="obrada_podataka" required>
+                                <label for="obrada_podataka">Prihvaćam prikupljanje, obradu i zloupotrebu osobnih podataka danih u obrascu bez kojih moj zahtjev ne može biti ispunjen.</label>
+                                    <br>
+                                <input type="checkbox" name="check_newsletter" id="check_newsletter">
+                                <label for="check_newsletter">Prijavi me na newsletter</label>    
+                            </div>
+                        </article>  
                     </form>
                 </div>
+
+               
 
                 <hr>
 

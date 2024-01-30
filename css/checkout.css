@@ -209,6 +209,18 @@ button[type="submit"] {
     border-radius: 25px;
 }
 
+.newsletter div {
+    margin-left: 25px;
+}
+
+.newsletter label {
+    font-size: small;
+}
+
+.newsletter input[type="checkbox"] {
+    accent-color: darkred;
+}
+
 @media screen and (max-width: 1080px)
 {
     .internal_data {
@@ -326,5 +338,13 @@ button[type="submit"] {
         margin-top: 20px;
         margin-inline: auto;
         font-size: 15px;
+    }
+
+    .newsletter input[type="checkbox"] {
+        height: auto;
+    }
+
+    .newsletter div {
+        margin-left: 0;
     }
 }

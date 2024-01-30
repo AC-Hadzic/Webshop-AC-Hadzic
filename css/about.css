@@ -1,0 +1,90 @@
+.fit, p {
+    margin-inline: 50px;
+}
+
+h2 {
+    margin: 0;
+    padding: 50px;
+}
+
+section {
+    text-align: justify;
+    line-height: 30px;
+}
+
+.icon {
+    filter: invert(98%) sepia(100%) saturate(0%) hue-rotate(325deg) brightness(101%) contrast(105%);
+
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+}
+
+:is(.history, .mission) > img {
+    width: 600px;
+    height: 400px;
+    margin-inline: 50px;
+    float: left;
+    border-radius: 25px;
+}
+
+.mission > img {
+    float: right;
+}
+
+@media screen and (max-width: 1080px)
+{
+    :is(.history, .mission) > img {
+        width: 500px;
+        height: 333px;
+        float: none;
+        margin: 20px auto;
+        display: block;
+    }
+
+    h2 {
+        font-size: larger;
+        padding: 25px;
+    }
+
+    p {
+        font-size: medium;
+    }
+}
+
+@media screen and (max-width: 850px)
+{
+    .fit {
+        margin-inline: 0;
+    }
+
+    section {
+        line-height: 25px;
+    }
+
+    p {
+        margin-inline: 30px;
+    }
+
+    .icon {
+        height: 20px;
+        width: 20px;
+        margin-right: 5px;
+        margin-left: 25px;
+    }
+
+    :is(.history, .mission) > img {
+        width: 275px;
+        height: 190px;
+        margin: 20px auto;
+    }
+
+    h2 {
+        font-size: large;
+        padding: 0px;
+    }
+
+    hr {
+        width: 90% !important;
+    }
+}

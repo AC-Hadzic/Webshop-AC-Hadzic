@@ -132,6 +132,20 @@ span {
     font-style: italic;
 }
 
+.newsletter {
+    width: 220px;
+    text-align: center;
+}
+
+.newsletter label {
+    font-size: small;
+}
+
+.newsletter input[type="checkbox"] {
+    accent-color: darkred;
+    height: auto;
+}
+
 @media screen and (max-width: 1080px)
 {
     .contact_form {
