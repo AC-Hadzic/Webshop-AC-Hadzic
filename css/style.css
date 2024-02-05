@@ -36,17 +36,12 @@ a:hover img {
 }
 
 .bling {
-    animation: bling 1s linear infinite;
     width: 260px;
     height: 50px;
     
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-@keyframes bling {
-    50% {font-size: 21px}
 }
 
 .popularne_kategorije div:not(:first-of-type) {
@@ -90,6 +85,14 @@ section {
 
 .popularni_proizvodi section {
     height: 480px;
+}
+
+.popularni_proizvodi section:hover img {
+    transition: 0.1s linear all;
+}
+
+.popularni_proizvodi section:not(:hover) img {
+    transition: 0.1s linear all;
 }
 
 span {

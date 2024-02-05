@@ -39,9 +39,28 @@ function pop_me()
     const oznaceno = document.getElementById('card');
     const pokazi = document.getElementById('show_up');
 
-    if (oznaceno.checked) {
+    if (oznaceno.checked) 
+    {
         pokazi.style.display = 'block';
-    } else {
+    } 
+    
+    else 
+    {
         pokazi.style.display = 'none';
+    }
+}
+
+function showToggle()
+{
+    const aside = document.getElementById('aside');
+
+    if (aside.style.display == 'none') 
+    {
+        aside.style.display = 'block';
+    } 
+    
+    else 
+    {
+        aside.style.display = 'none';
     }
 }

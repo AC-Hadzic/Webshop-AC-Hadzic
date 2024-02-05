@@ -32,14 +32,53 @@ section {
     float: right;
 }
 
+.team  {
+    min-height: 550px;
+}
+
+.team div {
+    margin-left: 50px;
+}
+
+.team > img {
+    width: 600px;
+    height: 400px; 
+    float: right;  
+    margin-inline: 50px;
+    border-radius: 25px;
+}
+
+.team p {
+    margin-top: 50px;
+    font-style: italic;
+    margin-bottom: -5px;
+}
+
+:is(.history, .mission, .team) > img:hover {
+    transition: 0.1s linear all;
+    filter: brightness(115%);
+    width: 610px;
+    height: 410px;
+}
+
+:is(.history, .mission, .team) > img:not(:hover) {
+    transition: 0.1s linear all;
+
+}
+
 @media screen and (max-width: 1080px)
 {
-    :is(.history, .mission) > img {
+    :is(.history, .mission, .team) > img {
         width: 500px;
         height: 333px;
         float: none;
         margin: 20px auto;
         display: block;
+    }
+
+    :is(.history, .mission, .team) > img:hover {
+        width: 510px;
+        height: 345px;
     }
 
     h2 {
@@ -73,18 +112,30 @@ section {
         margin-left: 25px;
     }
 
-    :is(.history, .mission) > img {
+    :is(.history, .mission, .team) > img {
         width: 275px;
         height: 190px;
         margin: 20px auto;
     }
 
+    :is(.history, .mission, .team) > img:hover {
+        width: 285px;
+        height: 200px;
+    }
+
     h2 {
         font-size: large;
         padding: 0px;
+        margin-inline: 20px;
     }
 
     hr {
         width: 90% !important;
+    }
+
+    .team div {
+        font-size: medium;
+        margin: 0;
+        margin-inline: 20px;
     }
 }

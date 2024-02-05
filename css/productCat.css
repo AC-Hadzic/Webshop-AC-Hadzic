@@ -1,0 +1,121 @@
+.fit_all {
+    margin-inline: 80px;
+}
+
+.icon {
+    filter: invert(98%) sepia(100%) saturate(0%) hue-rotate(325deg) brightness(101%) contrast(105%);
+
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+}
+
+h2 {
+    margin: 0;
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+
+.options {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    padding-bottom: 100px;
+}
+
+.options div {
+    height: 225px;
+    margin: 10px;
+}
+
+.options img {
+    width: 200px;
+    height: 200px;
+    border-radius: 25px;
+}
+
+.options div:not(:hover), .options div:not(:hover) img {
+    transition: 0.1s linear all;
+}
+
+.options div:hover {
+    font-size: larger;
+    transition: 0.1s linear all;
+}
+
+.options div:hover img {
+    box-shadow: 0px 0px 25px 5px darkred;
+    transition: 0.1s linear all;
+}
+
+@media screen and (max-width: 1080px)
+{
+    .fit_all {
+        margin-inline: 50px;
+    }
+
+    .options {
+        flex-wrap: wrap;
+        padding-bottom: 40px;
+    }
+
+    h2 {
+        font-size: large;
+        padding-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .icon {
+        height: 20px;
+        width: 20px;
+        margin-right: 5px;
+    }
+
+    .options div {
+        height: 225px;
+        font-size: medium;
+        margin-bottom: 30px;
+    }
+    
+    .options img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .options div:hover {
+        font-size: large;
+    }
+}
+
+@media screen and (max-width: 850px)
+{
+    .fit_all {
+        margin-inline: 20px;
+    }
+
+    .options {
+        flex-wrap: wrap;
+        padding-bottom: 20px;
+    }
+
+    h2 {
+        font-size: medium;
+        padding-top: 20px;
+        margin-bottom: 00px;
+    }
+
+    .options img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .options div {
+        height: 200px;
+        font-size: small;
+        margin-bottom: 10px;
+    }
+
+    .options div:hover {
+        font-size: medium;
+    }
+}

@@ -24,6 +24,7 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    min-height: 170px;
 }
 
 a {
@@ -201,6 +202,10 @@ span {
         width: 20px;
         height: 20px;
     }
+
+    .media_links {
+        min-height: 80px;
+    }
 }
 
 @media screen and (max-width: 850px)
@@ -251,6 +256,7 @@ span {
 
     .media_links {
         margin-bottom: 20px;
+        min-height: 145px;
     }
 
     .contact_form {
