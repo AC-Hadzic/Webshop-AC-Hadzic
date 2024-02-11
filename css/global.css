@@ -4,6 +4,99 @@
     margin: 0;
 }
 
+#loader {
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.9;
+}
+
+#loader_icon {
+    border: 16px solid transparent;
+    border-radius: 50%;
+    border-top: 16px solid orange;
+    border-bottom: 16px solid orange;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 0.5s linear infinite;
+    animation: spin 0.5s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+#theme_button {
+    position: absolute;
+    top: 0%;
+    right: 12%;
+    width: 100px;
+    height: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#theme_button button {
+    width: 64px;
+    height: 64px;
+    border-radius: 100px;
+    border: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#theme_button img {
+    margin: 0px;
+    width: 35px;
+    height: 35px;
+}
+
+#theme_button button:hover img {
+    filter: invert(57%) sepia(99%) saturate(823%) hue-rotate(360deg) brightness(101%) contrast(103%);
+    width: 45px;
+    height: 45px;
+}
+
+#theme_button button:hover {
+    background-color: white;
+    width: 70px;
+    height: 70px;
+    box-shadow: 0px 0px 25px 5px orange;
+}
+
+#theme_button button:active {
+    width: 60px;
+    height: 60px;
+}
+
+#theme_button button:active img {
+    width: 40px;
+    height: 40px;
+}
+
+#theme_button button:hover img, #theme_button button:hover {
+    transition: all linear 0.1s;
+}
+
+#theme_button button:not(:hover), #theme_button button:not(:hover) img {
+    transition: all linear 0.1s;
+}
+
 @font-face {
     font-family: Main_Font;
     src: url(../fonts/Tektur-VariableFont_wdth\,wght.ttf);

@@ -33,6 +33,7 @@ body {
     background-image: url(../images/background_header.gif);
     background-position: center;
     background-size: cover;
+    border-radius: 50px;
     -webkit-box-shadow: inset 0px 0px 20px 10px rgba(0,0,0,1);
     -moz-box-shadow: inset 0px 0px 20px 10px rgba(0,0,0,1);
     box-shadow: inset 0px 0px 20px 10px rgba(0,0,0,1);

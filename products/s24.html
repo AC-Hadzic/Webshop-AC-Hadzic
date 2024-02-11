@@ -6,14 +6,19 @@
         <title>Galaxy S24</title>
 
         <link rel="stylesheet" href="../css/product_details.css">
-        <link rel="stylesheet" href="../../css/global.css">
+        <link rel="stylesheet" href="../css/global.css">
+        <link rel="stylesheet" href="../css/theme.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="icon" href="../favicon.svg">
     </head>
 
     <body>
         <header>
-            <iframe src="../partials/header.html" width="100%" class="auto-height-iframe"></iframe>
+            <iframe id="header_iframe" src="../partials/header.html"  width="100%" class="auto-height-iframe"></iframe>
+
+            <div id="theme_button">
+                <button onclick="theme_toggle()"><img id="theme_icon" src="/images/icons/light_icon.svg" alt="Theme Mode"></button>
+            </div>
         </header>
 
         <main>
@@ -100,7 +105,7 @@
         </main>
 
         <footer>
-            <iframe src="../partials/footer.html" width="100%" class="auto-height-iframe"> </iframe>
+            <iframe id="footer_iframe" src="../partials/footer.html" width="100%" class="auto-height-iframe"> </iframe>
         </footer>
 
         <script src="../js/javascript.js"></script>
