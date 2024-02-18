@@ -1,16 +1,16 @@
-#fb:hover {
+.media_links div:hover #fb {
     filter: invert(35%) sepia(64%) saturate(849%) hue-rotate(187deg) brightness(90%) contrast(78%);
 }
 
-#tw:hover {
+.media_links div:hover #tw {
     filter: invert(49%) sepia(45%) saturate(1822%) hue-rotate(176deg) brightness(97%) contrast(95%);
 }
 
-#in:hover {
+.media_links div:hover #in {
     filter: invert(31%) sepia(33%) saturate(2440%) hue-rotate(289deg) brightness(96%) contrast(97%);
 }
 
-#wp:hover {    
+.media_links div:hover #wp {    
     filter: invert(63%) sepia(94%) saturate(412%) hue-rotate(86deg) brightness(92%) contrast(87%);
 }
 
@@ -24,17 +24,23 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    min-height: 170px;
+}
+
+.media_links div {
+    margin: auto 0;
+    width: 250px;
+    text-align: center;
+    height: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 a {
-    width: 40%;
     text-align: center;
     font-size: 25px; 
-    margin: 20px 0;
 }
 
-a:hover {
+.media_links div:hover a {
     font-size: 30px !important;
 }
 
@@ -44,8 +50,8 @@ a:hover {
 }
 
 .image img {
-    width: 550px;
-    height: 400px;
+    width: 100%;
+    height: auto;
     border-radius: 25px;
 }
 
@@ -74,8 +80,8 @@ tr td:first-of-type {
 }
 
 .contact_form {
-    min-width: 220px;
-    margin-left: 80px;
+    width: 350px;
+    margin-left: 120px;
 }
 
 .contact_infos {
@@ -83,7 +89,7 @@ tr td:first-of-type {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-left: 20px;
+    margin-left: 50px;
 }
 
 button {
@@ -93,14 +99,14 @@ button {
     width: 150px; 
     font-weight: bold;
     font-size: 14px;
-    margin-left: 40px;
+    margin-bottom: 20px;
 }
 
 input {
     border: 2px solid black;
     border-radius: 25px;
     height: 35px;
-    width: 200px;
+    width: 350px;
     margin-top: 10px;
 }
 
@@ -108,7 +114,7 @@ textarea {
     border: 2px solid black;
     border-radius: 10px;
     margin-top: 10px;
-    width: 200px;
+    width: 350px;
 }
 
 input::placeholder {
@@ -118,6 +124,13 @@ input::placeholder {
 
 .text_below_img, .social_media {
     margin-inline: 50px;
+}
+
+.form_controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 hr {
@@ -134,7 +147,7 @@ span {
 }
 
 .newsletter {
-    width: 220px;
+    width: 350px;
     text-align: center;
 }
 
@@ -150,14 +163,8 @@ span {
 @media screen and (max-width: 1080px)
 {
     .contact_form {
-        min-width: 220px;
-        margin-left: 40px;
-    }
-
-    .image img {
-        width: 350px;
-        height: 240px;
-        border-radius: 15px;
+        min-width: 300px;
+        margin-left: 50px;
     }
     
     figcaption {
@@ -165,6 +172,10 @@ span {
         font-style: italic;
         margin-top: -30px;
         margin-left: 10px;
+    }
+
+    .newsletter, textarea, input {
+        width: 300px;
     }
 
     p, a {
@@ -182,19 +193,13 @@ span {
         margin-left: 40px;
     }
 
-    a:hover {
+    .media_links div:hover a {
         font-size: 20px !important;
     }
 
-    a:hover img {
+    .media_links div:hover a img {
         height: 25px;
         width: 25px;
-    }
-
-    a {
-        width: 50%;
-        text-align: center;
-        margin: 5px 0;
     }
 
     .icon {
@@ -202,17 +207,18 @@ span {
         width: 20px;
         height: 20px;
     }
-
-    .media_links {
-        min-height: 80px;
-    }
 }
 
 @media screen and (max-width: 850px)
 {
     h2 {
         font-size: large;
-        margin-left: 25px;
+        margin-left: 0px;
+        text-align: center;
+    }
+
+    .social_media {
+        margin-bottom: 30px;
     }
 
     h2 img {
@@ -224,6 +230,10 @@ span {
         flex-direction: column-reverse;
         justify-content: center;
         width: 100%;
+    }
+
+    .newsletter {
+        width: 300px;
     }
 
     .contact_infos {
@@ -254,13 +264,13 @@ span {
         display: none;
     }
 
-    .media_links {
-        margin-bottom: 20px;
-        min-height: 145px;
+    .media_links div {
+        width: 180px;
+        height: 40px;
     }
 
     .contact_form {
-        min-width: auto;
+        width: 300px;
         margin: 0 auto;
     }
 
@@ -270,34 +280,30 @@ span {
 
     textarea {
         height: 100px;
+        width: 280px;
     }
 
     input {
         height: 25px;
         margin-top: 5px;
+        width: 280px;
     }
    
     button {
         height: 40px;
         width: 120px; 
         font-size: 12px;
-        margin-left: 45px;
     }
 
     button:last-of-type {
         margin-bottom: 20px;
     }
 
-    a {
-        width: 40%;
-        margin-bottom: 15px;
-    }
-
-    a:hover {
+    .media_links div:hover a {
         font-size: 18px !important;
     }
 
-    a:hover img {
+    .media_links div:hover a img {
         height: 30px;
         width: 30px;
     }

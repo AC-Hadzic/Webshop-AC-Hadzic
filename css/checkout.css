@@ -17,6 +17,7 @@ a, img, button:hover {
     display: flex;
     align-items: center;
     width: 100%;
+    height: 60px;
 }
 
 .naslov img {
@@ -38,9 +39,16 @@ a, img, button:hover {
 }
 
 section {
-    height: max-content;
     display: flex;
-    margin: 10px;
+    flex-direction: row;
+}
+
+section div:first-of-type {
+    min-width: 140px;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .internal_data {
@@ -57,11 +65,10 @@ section {
     font-weight: bold;
 }
 
-section > img {
+section img {
     height: 120px;
     width: 120px;
     border-radius: 25px;
-    margin-bottom: 10px;
 }
 
 h3 {
@@ -262,26 +269,32 @@ button[type="submit"] {
         font-size: small;
     }
 
+    .naslov {
+        justify-content: center;
+    }
+
     .naslov img {
         width: 20px;
         height: 20px;
         margin-inline: 10px;
     }
 
+    .naslov:hover img {
+        height: 25px;
+        width: 25px;
+    }
+
     .naslov:hover span {
         font-size: 20px;
     }
 
-    section > img {
-        height: 60px;
-        width: 60px;
-        border-radius: 25px;
-        margin-bottom: 10px;
+    section img {
+        height: 80px;
+        width: 80px;
     }
     a:hover img {
-        box-shadow: 0px 0px 25px 5px darkred;
-        width: 70px;
-        height: 70px;
+        width: 90px;
+        height: 90px;
     }
 
     .podaci_placanje {

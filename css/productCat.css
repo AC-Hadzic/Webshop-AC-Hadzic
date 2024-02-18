@@ -25,6 +25,7 @@ h2 {
 
 .options div {
     height: 225px;
+    width: 230px;
     margin: 10px;
 }
 
@@ -102,6 +103,7 @@ h2 {
         font-size: medium;
         padding-top: 20px;
         margin-bottom: 00px;
+        text-align: center;
     }
 
     .options img {
@@ -111,6 +113,7 @@ h2 {
 
     .options div {
         height: 200px;
+        width: 180px;
         font-size: small;
         margin-bottom: 10px;
     }

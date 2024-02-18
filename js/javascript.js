@@ -110,6 +110,7 @@ function theme_toggle()
         }
         icon.src = light;
     }
+    loader();
 } 
 
 // Load theme from cookies on page load
@@ -149,15 +150,20 @@ window.onload = function()
 // Page Loader
 var aaa = document.getElementById("loader");
 
-function loader() {
-    aaa.style.opacity = '0';
-    setTimeout();
-
+function loader() 
+{
+    showLoader();
+    setTimeout(hideLoader, 500);
 }
 
-setTimeout(() => {
-    if (aaa)
-    {
-        aaa.remove(); 
-    }
-  }, 400)
+function showLoader() 
+{
+    aaa.style.display = "block";
+}
+
+function hideLoader() 
+{
+    aaa.style.display = "none";
+}
+
+

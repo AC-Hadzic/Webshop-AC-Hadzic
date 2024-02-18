@@ -51,14 +51,12 @@ section {
 .team p {
     margin-top: 50px;
     font-style: italic;
-    margin-bottom: -5px;
+    margin-bottom: 0px;
 }
 
 :is(.history, .mission, .team) > img:hover {
     transition: 0.1s linear all;
     filter: brightness(115%);
-    width: 610px;
-    height: 410px;
 }
 
 :is(.history, .mission, .team) > img:not(:hover) {
@@ -74,11 +72,6 @@ section {
         float: none;
         margin: 20px auto;
         display: block;
-    }
-
-    :is(.history, .mission, .team) > img:hover {
-        width: 510px;
-        height: 345px;
     }
 
     h2 {
@@ -118,15 +111,11 @@ section {
         margin: 20px auto;
     }
 
-    :is(.history, .mission, .team) > img:hover {
-        width: 285px;
-        height: 200px;
-    }
-
     h2 {
         font-size: large;
         padding: 0px;
-        margin-inline: 20px;
+        margin-inline: 0px;
+        text-align: center;
     }
 
     hr {

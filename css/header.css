@@ -12,7 +12,7 @@ body {
 }
 
 .background_header {
-    width: 85vw;
+    width: 90vw;
     margin: 0 auto;
     display: flex;
     align-items: flex-end;
@@ -48,7 +48,7 @@ span {
     font-size: 50px;
 }
 
-.banner_text:hover span {
+.banner_text:hover .colorup {
     font-size: 80px;
     color: yellow;
 }
@@ -74,7 +74,8 @@ span {
 .logo img {
     height: 160px;
     width: 160px;
-    margin-inline: 25px;
+    margin-left: 25px;
+    margin-right: 10px;
     filter: invert(98%) sepia(100%) saturate(0%) hue-rotate(325deg) brightness(101%) contrast(105%);
 }
 
@@ -102,18 +103,23 @@ span {
     align-items: center;
 }
 
-.prvi_red > div {
-    height: 30px;
-
-    display: flex;
-    align-items: center;
-
-    padding: 5px;
+.email {
+    width: 280px;
 }
 
-.prvi_red > div:not(.basket, .login)
-{
-    margin-inline: 30px;
+.tel {
+    width: 260px;
+}
+
+.basket, .login {
+    width: 50px;
+}
+
+.prvi_red > div {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
 }
 
     .social_media {
@@ -123,7 +129,7 @@ span {
     }
 
     .social_media div {
-        width: 50px;
+        width: 40px;
     }
 
     :is(.social_media, .basket, .login) img:hover {
@@ -154,14 +160,13 @@ span {
     .prvi_red img {
         height: 30px;
         width: 30px;
-        margin-inline: 10px;
     }
 
     #search_bar {
         border: 1px solid black;
         font-size: large;
         height: 40px;
-        width: 200px;
+        width: 150px;
         border-radius: 25px;
     }
 
@@ -281,8 +286,12 @@ a, img, button, .banner_text, span:hover {
         font-size: large;
     }
 
-    .banner_text:hover span {
+    .banner_text:hover .colorup {
         font-size: larger;
+    }
+
+    .remove_mq {
+        display: none;
     }
 
     .logo {
@@ -317,6 +326,7 @@ a, img, button, .banner_text, span:hover {
     .prvi_red :is(.email, .tel, .social_media), .drugi_red .faq {
         display: none;
     }
+
 
     .prvi_red > div {
         padding: 0px;

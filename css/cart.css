@@ -17,6 +17,7 @@ a, img, button:hover {
     display: flex;
     align-items: center;
     width: 100%;
+    height: 60px;
 }
 
 .naslov img {
@@ -38,9 +39,16 @@ a, img, button:hover {
 }
 
 section {
-    height: max-content;
     display: flex;
-    margin: 10px;
+    flex-direction: row;
+}
+
+section div:first-of-type {
+    min-width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .internal_data {
@@ -57,11 +65,10 @@ section {
     font-weight: bold;
 }
 
-section > img {
+section img {
     height: 180px;
     width: 180px;
     border-radius: 25px;
-    margin-bottom: 10px;
 }
 
 .vert_line {
@@ -239,7 +246,7 @@ button {
         font-size: medium;
     }
 
-    button {
+    .buttons button {
         font-size: 12px;
         min-width: 70px;
         margin: 10px;
@@ -298,8 +305,10 @@ button {
     .podaci img {
         width: 60px;
         height: 60px;
-        margin-left: 20px;
-        margin-bottom: 0px;
+    }
+
+    .naslov {
+        justify-content: center;
     }
 
     .podaci a:hover img {
@@ -313,6 +322,11 @@ button {
 
     .podaci td:not(:nth-of-type(1)) {
         min-width: auto;
+    }
+
+    section div:first-of-type {
+        min-width: 70px;
+        height: 70px;
     }
 
     .buttons {
@@ -339,4 +353,9 @@ button {
         font-size: 20px;
         padding: 20px;
     } 
+
+    section {
+        align-items: center;
+        justify-content: center;
+    }
 }

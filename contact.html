@@ -12,8 +12,16 @@
     </head>
 
     <body>
+        <div id="loader" style="display: none;">
+            <div id="loader_inner">
+                <div id="loader_icon">
+                    <img src="images/other/bananas.png" alt="Loader">
+                </div>
+            </div>
+        </div>
+        
         <header>
-            <iframe id="header_iframe" src="../partials/header.html"  width="100%" class="auto-height-iframe"></iframe>
+            <iframe id="header_iframe" src="partials/header.html"  width="100%" class="auto-height-iframe"></iframe>
 
             <div id="theme_button">
                 <button onclick="theme_toggle()"><img id="theme_icon" src="/images/icons/light_icon.svg" alt="Theme Mode"></button>
@@ -26,30 +34,31 @@
             <article class="contacts">
                 <section class="contact_form">
                     <form action="hvala-vam.html" target="_parent" method="get">
-                        <label for="name_surname"> Ime i prezime: </label><br>
-                        <input type="text" name="name_surname" id="name_surname" placeholder="  Gavrilo Paperclip" required>
-                            <br><br>
-                        <label for="email"> Email: </label><br>
-                        <input type="email" name="email" id="email" placeholder="  gav.paperclip@gmail.com" size="30" required>
-                            <br><br>
-                        <label for="poruka"> Poruka: </label><br>
-                        <textarea name="poruka" id="poruka" cols="32" rows="10" placeholder="  Vaša poruka ovdje." required></textarea>
-                            <br><br>
-                            <article class="newsletter">
-                                <div>
-                                    <input type="checkbox" name="obrada_podataka" id="obrada_podataka" required>
-                                    <label for="obrada_podataka">Prihvaćam prikupljanje, obradu i zloupotrebu osobnih podataka danih u obrascu bez kojih moj zahtjev ne može biti ispunjen.</label>
-                                        <br><br>
-                                    <input type="checkbox" name="check_newsletter" id="check_newsletter">
-                                    <label for="check_newsletter">Prijavi me na newsletter</label>    
-                                </div>
-                            </article>     
-
+                    <label for="name_surname"> Ime i prezime: </label><br>
+                    <input type="text" name="name_surname" id="name_surname" placeholder="  Gavrilo Paperclip" required>
+                        <br><br>
+                    <label for="email"> Email: </label><br>
+                    <input type="email" name="email" id="email" placeholder="  gav.paperclip@gmail.com" size="30" required>
+                        <br><br>
+                    <label for="poruka"> Poruka: </label><br>
+                    <textarea name="poruka" id="poruka" cols="32" rows="10" placeholder="  Vaša poruka ovdje." required></textarea>
+                        <br><br>
+                        <article class="newsletter">
+                            <div>
+                                <input type="checkbox" name="obrada_podataka" id="obrada_podataka" required>
+                                <label for="obrada_podataka">Prihvaćam prikupljanje, obradu i zloupotrebu osobnih podataka danih u obrascu bez kojih moj zahtjev ne može biti ispunjen.</label>
+                                    <br><br>
+                                <input type="checkbox" name="check_newsletter" id="check_newsletter">
+                                <label for="check_newsletter">Prijavi me na newsletter</label>    
+                            </div>
+                        </article>     
                         <br> 
-
+                    <div class="form_controls">
                         <button type="submit"> Pošalji poruku </button>
                             <br><br>
                         <button type="reset"> Izbriši podatke</button>
+                    </div>
+                        
                     </form>
                 </section>
 
@@ -91,12 +100,20 @@
                             Za zaostale korisnike također smo dostupni i na društvenim mrežama:   
                         </p>
                         
-
                         <div class="media_links">
-                            <a id="fb" href="https://www.facebook.com/TeleRecenzija/" target="_blank"><img class="icon" src="images/icons/facebook.svg" alt="Link to Facebook">TeleRecenzije </a>
-                            <a id="in" href="https://www.instagram.com/telerecenzija/" target="_blank"><img class="icon" src="images/icons/instagram.svg" alt="Link to Instagram">TeleRecenzije </a>
-                            <a id="wp" href="https://www.whatsapp.com/telerecenzija/" target="_blank"><img class="icon" src="images/icons/whatsapp.svg" alt="Link to Whatsapp">TeleRecenzije</a>
-                            <a id="tw" href="https://www.twitter.com/telerecenzija/" target="_blank"><img class="icon" src="images/icons/twitter.svg" alt="Link to Twitter">TeleRecenzije </a>
+                            <div>
+                                <a id="fb" href="https://www.facebook.com/TeleRecenzija/" target="_blank"><img class="icon" src="images/icons/facebook.svg" alt="Link to Facebook">TeleRecenzije </a>
+                            </div>
+                            <div>
+                                <a id="in" href="https://www.instagram.com/telerecenzija/" target="_blank"><img class="icon" src="images/icons/instagram.svg" alt="Link to Instagram">TeleRecenzije </a>
+                            </div>
+                            <div>
+                                <a id="wp" href="https://www.whatsapp.com/telerecenzija/" target="_blank"><img class="icon" src="images/icons/whatsapp.svg" alt="Link to Whatsapp">TeleRecenzije</a>
+                            </div>
+                         
+                            <div>
+                                <a id="tw" href="https://www.twitter.com/telerecenzija/" target="_blank"><img class="icon" src="images/icons/twitter.svg" alt="Link to Twitter">TeleRecenzije </a>
+                            </div>
                         </div>
 
                         <p>

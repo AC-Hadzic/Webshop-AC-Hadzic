@@ -96,14 +96,14 @@ section {
     transition: 0.1s linear all;
 }
 
-span {
-    font-weight: bold;
-    text-align: center;
-    margin: 8px;
-}
-
 .intern_product {
     display: flex;
+}
+
+span {
+    text-align: center;
+    margin-inline: 10px;
+    font-weight: bold;
 }
 
 img {
@@ -133,16 +133,8 @@ img {
 }
 
 .blog img:hover {
-    height: 230px;
-    width: 310px;
     transition: 0.1s linear all;
     filter: brightness(115%);
-}
-
-.blog section:nth-of-type(2) img:hover {
-    height: 190px;
-    width: 310px;
-    transition: 0.1s linear all;
 }
 
 :is(.blog, .blog section:nth-of-type(2)) img:not(:hover) {
@@ -249,19 +241,6 @@ button:active {
         display: block;
         margin: 0 auto;
         height: 120px;
-    }
-
-    .blog img:hover {
-        height: 160px;
-        width: 260px;
-        transition: 0.1s linear all;
-        filter: brightness(115%);
-    }
-    
-    .blog section:nth-of-type(2) img:hover {
-        height: 130px;
-        width: 260px;
-        transition: 0.1s linear all;
     }
 
     a:hover img {
