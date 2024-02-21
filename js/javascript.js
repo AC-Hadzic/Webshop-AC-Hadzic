@@ -70,10 +70,10 @@ function showToggle()
         aside.style.display = 'none';
     }
 }
-
+// AAAAAAAAAAAAAAAAAAAA
 // Definitions for themes
-const light = "/images/icons/light_icon.svg";
-const night = "/images/icons/night_icon.svg";
+const light = "images/icons/light_icon.svg";
+const night = "images/icons/night_icon.svg";
 const icon = document.getElementById("theme_icon");
 const body = document.body;  
 const header = document.getElementById("header_iframe");
