@@ -78,6 +78,7 @@ const icon = document.getElementById("theme_icon");
 const body = document.body;  
 const header = document.getElementById("header_iframe");
 const footer = document.getElementById("footer_iframe");
+const prod_aside = document.getElementById("iframe_aside");
 
 // Toggle light/dark theme & save user preference in cookies
 function theme_toggle() 
@@ -87,12 +88,14 @@ function theme_toggle()
         body.classList = "light_mode";
         document.cookie = "theme=light_mode; path=/";
 
-        // Check if header & footer exists or else many null errors :c
+        // Check header, footer & aside if exists or else many null errors :c
         if (header && header.contentWindow && header.contentWindow.document.body &&
-            footer && footer.contentWindow && footer.contentWindow.document.body)
+            footer && footer.contentWindow && footer.contentWindow.document.body &&
+            prod_aside && prod_aside.contentWindow && prod_aside.contentWindow.document.body)
         {
             header.contentWindow.document.body.classList = "light_mode";
             footer.contentWindow.document.body.classList = "light_mode";
+            prod_aside.contentWindow.document.body.classList = "light_mode";
         }
         icon.src = night;
     }
@@ -103,10 +106,12 @@ function theme_toggle()
         document.cookie = "theme=dark_mode; path=/";
 
         if (header && header.contentWindow && header.contentWindow.document.body && 
-            footer && footer.contentWindow && footer.contentWindow.document.body)
+            footer && footer.contentWindow && footer.contentWindow.document.body &&
+            prod_aside && prod_aside.contentWindow && prod_aside.contentWindow.document.body)
         {
             header.contentWindow.document.body.classList = "";
             footer.contentWindow.document.body.classList = "";
+            prod_aside.contentWindow.document.body.classList = "";
         }
         icon.src = light;
     }
@@ -120,12 +125,14 @@ window.onload = function()
         {
             body.classList = "light_mode";
 
-            // Check if header & footer exists or else many null errors :c
+            // Check header, footer & aside if exists or else many null errors :c
             if (header && header.contentWindow && header.contentWindow.document.body && 
-                footer && footer.contentWindow && footer.contentWindow.document.body)
+                footer && footer.contentWindow && footer.contentWindow.document.body &&
+                prod_aside && prod_aside.contentWindow && prod_aside.contentWindow.document.body)
             {
                 header.contentWindow.document.body.classList = "light_mode";
                 footer.contentWindow.document.body.classList = "light_mode";
+                prod_aside.contentWindow.document.body.classList = "light_mode";
 
                 icon.src = night;
             }
@@ -135,12 +142,14 @@ window.onload = function()
     {
         body.classList = ""
     
-        // Check if header & footer exists or else many null errors :c
+        // Check header, footer & aside if exists or else many null errors :c
         if (header && header.contentWindow && header.contentWindow.document.body && 
-        footer && footer.contentWindow && footer.contentWindow.document.body)
+        footer && footer.contentWindow && footer.contentWindow.document.body &&
+        prod_aside && prod_aside.contentWindow && prod_aside.contentWindow.document.body)
         {
             header.contentWindow.document.body.classList = "";
             footer.contentWindow.document.body.classList = "";
+            prod_aside.contentWindow.document.body.classList = "";
 
             icon.src = light;
         }
