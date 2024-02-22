@@ -89,7 +89,7 @@ function theme_toggle()
         document.cookie = "theme=light_mode; path=/";
 
         // Check header, footer & aside if exists or else many null errors :c
-        if (header && header.contentWindow && header.contentWindow.document.body &&
+        if (header && header.contentWindow && header.contentWindow.document.body && 
             footer && footer.contentWindow && footer.contentWindow.document.body)
         {
             header.contentWindow.document.body.classList = "light_mode";
@@ -100,6 +100,7 @@ function theme_toggle()
                 prod_aside.contentWindow.document.body.classList = "light_mode";
             }
         }
+
         icon.src = night;
     }
 
@@ -119,8 +120,10 @@ function theme_toggle()
                 prod_aside.contentWindow.document.body.classList = "";
             }
         }
+
         icon.src = light;
     }
+    
     loader();
 } 
 
@@ -153,7 +156,7 @@ window.onload = function()
     
         // Check header, footer & aside if exists or else many null errors :c
         if (header && header.contentWindow && header.contentWindow.document.body && 
-        footer && footer.contentWindow && footer.contentWindow.document.body)
+            footer && footer.contentWindow && footer.contentWindow.document.body)
         {
             header.contentWindow.document.body.classList = "";
             footer.contentWindow.document.body.classList = "";
