@@ -94,11 +94,11 @@ function theme_toggle()
         {
             header.contentWindow.document.body.classList = "light_mode";
             footer.contentWindow.document.body.classList = "light_mode";
+        }
 
-            if (prod_aside && prod_aside.contentWindow && prod_aside.contentWindow.document.body)
-            {
-                prod_aside.contentWindow.document.body.classList = "light_mode";
-            }
+        if (prod_aside && prod_aside.contentWindow && prod_aside.contentWindow.document.body)
+        {
+            prod_aside.contentWindow.document.body.classList = "light_mode";
         }
 
         icon.src = night;
@@ -114,16 +114,16 @@ function theme_toggle()
         {
             header.contentWindow.document.body.classList = "";
             footer.contentWindow.document.body.classList = "";
-            
-            if (prod_aside && prod_aside.contentWindow && prod_aside.contentWindow.document.body)
-            {
-                prod_aside.contentWindow.document.body.classList = "";
-            }
+        }
+
+        if (prod_aside && prod_aside.contentWindow && prod_aside.contentWindow.document.body)
+        {
+            prod_aside.contentWindow.document.body.classList = "";
         }
 
         icon.src = light;
     }
-    
+
     loader();
 } 
 
@@ -141,12 +141,12 @@ window.onload = function()
                 header.contentWindow.document.body.classList = "light_mode";
                 footer.contentWindow.document.body.classList = "light_mode";
 
-                if (prod_aside && prod_aside.contentWindow && prod_aside.contentWindow.document.body)
-                {
-                    prod_aside.contentWindow.document.body.classList = "light_mode";
-                }
-
                 icon.src = night;
+            }
+
+            if (prod_aside && prod_aside.contentWindow && prod_aside.contentWindow.document.body)
+            {
+                prod_aside.contentWindow.document.body.classList = "light_mode";
             }
         }
 
@@ -161,12 +161,12 @@ window.onload = function()
             header.contentWindow.document.body.classList = "";
             footer.contentWindow.document.body.classList = "";
 
-            if (prod_aside && prod_aside.contentWindow && prod_aside.contentWindow.document.body)
-            {
-                prod_aside.contentWindow.document.body.classList = "";
-            }
-
             icon.src = light;
+        }
+
+        if (prod_aside && prod_aside.contentWindow && prod_aside.contentWindow.document.body)
+        {
+            prod_aside.contentWindow.document.body.classList = "";
         }
     }    
 }
