@@ -70,7 +70,7 @@ function showToggle()
         aside.style.display = 'none';
     }
 }
-// AAAAAAAAAAAAAAAAAAAA
+// AAAAAAAAAAAAAAAAAAAA 
 // Definitions for themes
 const light = "images/icons/light_icon.svg";
 const night = "images/icons/night_icon.svg";
@@ -78,6 +78,7 @@ const icon = document.getElementById("theme_icon");
 const body = document.body;  
 const header = document.getElementById("header_iframe");
 const footer = document.getElementById("footer_iframe");
+const prod_aside = document.getElementById("iframe_aside");
 
 // Toggle light/dark theme & save user preference in cookies
 function theme_toggle() 
@@ -87,13 +88,19 @@ function theme_toggle()
         body.classList = "light_mode";
         document.cookie = "theme=light_mode; path=/";
 
-        // Check if header & footer exists or else many null errors :c
-        if (header && header.contentWindow && header.contentWindow.document.body &&
+        // Check header, footer & aside if exists or else many null errors :c
+        if (header && header.contentWindow && header.contentWindow.document.body && 
             footer && footer.contentWindow && footer.contentWindow.document.body)
         {
             header.contentWindow.document.body.classList = "light_mode";
             footer.contentWindow.document.body.classList = "light_mode";
         }
+
+        if (prod_aside && prod_aside.contentWindow && prod_aside.contentWindow.document.body)
+        {
+            prod_aside.contentWindow.document.body.classList = "light_mode";
+        }
+
         icon.src = night;
     }
 
@@ -108,8 +115,15 @@ function theme_toggle()
             header.contentWindow.document.body.classList = "";
             footer.contentWindow.document.body.classList = "";
         }
+
+        if (prod_aside && prod_aside.contentWindow && prod_aside.contentWindow.document.body)
+        {
+            prod_aside.contentWindow.document.body.classList = "";
+        }
+
         icon.src = light;
     }
+
     loader();
 } 
 
@@ -120,7 +134,7 @@ window.onload = function()
         {
             body.classList = "light_mode";
 
-            // Check if header & footer exists or else many null errors :c
+            // Check header, footer & aside if exists or else many null errors :c
             if (header && header.contentWindow && header.contentWindow.document.body && 
                 footer && footer.contentWindow && footer.contentWindow.document.body)
             {
@@ -129,20 +143,30 @@ window.onload = function()
 
                 icon.src = night;
             }
+
+            if (prod_aside && prod_aside.contentWindow && prod_aside.contentWindow.document.body)
+            {
+                prod_aside.contentWindow.document.body.classList = "light_mode";
+            }
         }
 
     else if (document.cookie == "theme=dark_mode")
     {
         body.classList = ""
     
-        // Check if header & footer exists or else many null errors :c
+        // Check header, footer & aside if exists or else many null errors :c
         if (header && header.contentWindow && header.contentWindow.document.body && 
-        footer && footer.contentWindow && footer.contentWindow.document.body)
+            footer && footer.contentWindow && footer.contentWindow.document.body)
         {
             header.contentWindow.document.body.classList = "";
             footer.contentWindow.document.body.classList = "";
 
             icon.src = light;
+        }
+
+        if (prod_aside && prod_aside.contentWindow && prod_aside.contentWindow.document.body)
+        {
+            prod_aside.contentWindow.document.body.classList = "";
         }
     }    
 }
